@@ -5,6 +5,8 @@ project:
 website:
   title: "Kodjo Aklobessi"
   navbar:
+    background: "#002366"
+    foreground: "white"
     pinned: true
     collapse-after: 3
     left:
