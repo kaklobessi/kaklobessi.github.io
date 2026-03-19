@@ -70,6 +70,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Curriculum Vitae – Kodjo Aklobessi">
+<meta property="og:description" content="Kodjo Aklobessi — PhD Student in Economics at Université de Montréal. Research in Family Macroeconomics, Labor Economics, and Applied Microeconometrics.">
+<meta property="og:site_name" content="Kodjo Aklobessi">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -240,7 +243,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/kaklobessi\.github\.io");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
