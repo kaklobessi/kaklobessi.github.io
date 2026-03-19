@@ -21,6 +21,8 @@ website:
       - href: news.qmd
         text: News
     right:
+      - href: resources.qmd
+        text: Resources
       - icon: github
         href: https://github.com/kaklobessi
         aria-label: GitHub
