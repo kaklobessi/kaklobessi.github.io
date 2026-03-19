@@ -1,0 +1,22 @@
+---
+title: "Research"
+---
+
+## Working Papers
+
+**Progressive Individual Taxation and the Added Worker Effect**
+*Job Market Paper*
+
+This paper studies how progressive income taxation affects the Added Worker Effect (AWE) — the increase in secondary earner labor supply following a primary earner job loss. Using the 2015 Alberta tax reform as a quasi-natural experiment, I estimate a difference-in-differences design on Canadian LFS data. I find that increased progressivity reduces the AWE by 29.8%. A structural household model with incomplete markets and earner-specific HSV taxation identifies two channels: a distortion channel (~63%) and an insurance channel (~32%).
+
+---
+
+**Land Misallocation and Agricultural Productivity in Nigeria**
+
+This paper documents and quantifies land misallocation across farm households in Nigeria using five waves of LSMS-ISA panel data (2010–2020). Within-household variation in marginal revenue products of land reveals substantial misallocation. A general-equilibrium corrected counterfactual suggests productivity gains of approximately 7% from equalizing land allocation.
+
+---
+
+**Agricultural Finance and Productivity in Togo**
+
+Using household survey data from Togo, this paper examines the determinants of access to and use of agricultural finance, and its effects on farm productivity and welfare outcomes.

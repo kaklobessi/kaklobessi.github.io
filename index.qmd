@@ -1,0 +1,25 @@
+---
+title: "Kodjo Aklobessi"
+about:
+  template: trestles
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:kodjo.aklobessi@umontreal.ca
+    - icon: github
+      text: GitHub
+      href: https://github.com/kaklobessi
+---
+
+I am a PhD candidate in Economics at the **Université de Montréal**. My research lies at the intersection of public finance, labor economics, and household behavior.
+
+My work focuses on how tax policy shapes labor supply decisions within households, the role of informal insurance mechanisms, and resource misallocation in developing economies.
+
+---
+
+### Research Interests
+
+- Public Finance & Taxation
+- Labor Supply & Household Economics
+- Development Economics
+- Structural Macroeconomics

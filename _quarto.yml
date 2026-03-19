@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Kodjo Aklobessi"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: cv.qmd
+        text: CV
+  page-footer:
+    left: "© 2026 Kodjo Aklobessi"
+    right: "PhD Candidate, Université de Montréal"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false

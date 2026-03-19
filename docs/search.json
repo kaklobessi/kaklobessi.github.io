@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "Download CV (PDF)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Kodjo Aklobessi",
+    "section": "",
+    "text": "I am a PhD candidate in Economics at the Université de Montréal. My research lies at the intersection of public finance, labor economics, and household behavior.\nMy work focuses on how tax policy shapes labor supply decisions within households, the role of informal insurance mechanisms, and resource misallocation in developing economies.\n\n\nResearch Interests\n\nPublic Finance & Taxation\nLabor Supply & Household Economics\nDevelopment Economics\nStructural Macroeconomics"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Progressive Individual Taxation and the Added Worker Effect Job Market Paper\nThis paper studies how progressive income taxation affects the Added Worker Effect (AWE) — the increase in secondary earner labor supply following a primary earner job loss. Using the 2015 Alberta tax reform as a quasi-natural experiment, I estimate a difference-in-differences design on Canadian LFS data. I find that increased progressivity reduces the AWE by 29.8%. A structural household model with incomplete markets and earner-specific HSV taxation identifies two channels: a distortion channel (~63%) and an insurance channel (~32%).\n\nLand Misallocation and Agricultural Productivity in Nigeria\nThis paper documents and quantifies land misallocation across farm households in Nigeria using five waves of LSMS-ISA panel data (2010–2020). Within-household variation in marginal revenue products of land reveals substantial misallocation. A general-equilibrium corrected counterfactual suggests productivity gains of approximately 7% from equalizing land allocation.\n\nAgricultural Finance and Productivity in Togo\nUsing household survey data from Togo, this paper examines the determinants of access to and use of agricultural finance, and its effects on farm productivity and welfare outcomes."
+  },
+  {
+    "objectID": "research.html#working-papers",
+    "href": "research.html#working-papers",
+    "title": "Research",
+    "section": "",
+    "text": "Progressive Individual Taxation and the Added Worker Effect Job Market Paper\nThis paper studies how progressive income taxation affects the Added Worker Effect (AWE) — the increase in secondary earner labor supply following a primary earner job loss. Using the 2015 Alberta tax reform as a quasi-natural experiment, I estimate a difference-in-differences design on Canadian LFS data. I find that increased progressivity reduces the AWE by 29.8%. A structural household model with incomplete markets and earner-specific HSV taxation identifies two channels: a distortion channel (~63%) and an insurance channel (~32%).\n\nLand Misallocation and Agricultural Productivity in Nigeria\nThis paper documents and quantifies land misallocation across farm households in Nigeria using five waves of LSMS-ISA panel data (2010–2020). Within-household variation in marginal revenue products of land reveals substantial misallocation. A general-equilibrium corrected counterfactual suggests productivity gains of approximately 7% from equalizing land allocation.\n\nAgricultural Finance and Productivity in Togo\nUsing household survey data from Togo, this paper examines the determinants of access to and use of agricultural finance, and its effects on farm productivity and welfare outcomes."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]
