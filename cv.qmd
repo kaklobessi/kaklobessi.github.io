@@ -3,3 +3,7 @@ title: "Curriculum Vitae"
 ---
 
 [Download CV](CV_AKA.pdf){.btn .btn-outline-primary}
+
+<br>
+
+<iframe src="CV_AKA.pdf" width="100%" height="1000px" style="border: none;"></iframe>
