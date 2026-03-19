@@ -2,6 +2,22 @@
 title: "Teaching"
 ---
 
-## Courses
+## Lecturer
 
-*Coming soon.*
+**University of Montreal**, Montréal, Canada
+
+| Period | Course |
+|---|---|
+| 2024 – present | ECN 1000 — Introduction to Economics |
+
+---
+
+## Teaching Assistant
+
+**University of Montreal**, Montréal, Canada
+
+| Period | Course |
+|---|---|
+| 2023 – 2024 | ECN 1050 — Principles of Microeconomics |
+| 2023 – 2024 | ECN 1075 — Principles of Macroeconomics |
+| 2023 – 2024 | ECN 1700 — Statistics for Economists |
