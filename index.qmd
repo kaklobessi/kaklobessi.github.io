@@ -12,6 +12,8 @@ about:
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/kaklobessi
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      href: https://scholar.google.com/scholar?oi=bibs&hl=fr&cluster=11327702334895840212
 ---
 
 I am a PhD candidate in Economics at the **Université de Montréal**. My research lies at the intersection of Family Macroeconomics, Labor economics, and Applied microeconomics.
