@@ -2,9 +2,9 @@
   {
     "objectID": "cv.html",
     "href": "cv.html",
-    "title": "CV",
+    "title": "Curriculum Vitae",
     "section": "",
-    "text": "Coming soon."
+    "text": "Download CV"
   },
   {
     "objectID": "index.html",
@@ -19,6 +19,20 @@
     "title": "Research",
     "section": "",
     "text": "Coming soon."
+  },
+  {
+    "objectID": "research.html#working-papers",
+    "href": "research.html#working-papers",
+    "title": "Research",
+    "section": "",
+    "text": "Coming soon."
+  },
+  {
+    "objectID": "research.html#publications",
+    "href": "research.html#publications",
+    "title": "Research",
+    "section": "Publications",
+    "text": "Publications\nRevisiting the Environmental Kuznets Curve: Evidence from West Africa with Yao Silvère Konan Environmental Economics, Vol. 12(1), 2021, pp. 64–75 DOI: 10.21511/ee.12(1).2021.06\n\n\nAbstract\n\nThis paper analyzes the revenue-pollution relationship by revisiting the Environmental Kuznets Curve (EKC) hypothesis for West African countries over the period of 1980–2014. The study approximates the income measurement by GDP per capita and uses carbon dioxide (CO2), nitrogen oxide (NO2), and methane emissions as various environmental quality measures. The paper uses parametric and non-parametric estimation techniques to test the EKC hypothesis. The results support the existence of the U-inverted relationship between income and methane emission, on one hand, and between income and nitrogen dioxide emission on the other. The estimates also show a mixed result for the U-inverted hypothesis between income and carbon dioxide emissions. Thus, the verification of the curve depends on the estimation techniques and the measurement of the pollutant used. The obtained results led to the conclusion that the EKC hypothesis is validated for West African countries.\n\n\nImpact du Conseil Agricole sur les Performances des Producteurs d’Anacarde de Côte d’Ivoire with Doukouré Charles Fé European Scientific Journal, Vol. 14(30), 2018, p. 292 DOI: 10.19044/esj.2018.v14n30p292\n\n\nAbstract\n\nThe cashew sector has been booming in Côte d’Ivoire for the last three years. In the face of international competition, it appeared important to improve the performance of producers in order to maintain the comparative advantages of Côte d’Ivoire. In this perspective, the agricultural advisory project was set up to train cashew farmers in good practices. This study aims to evaluate the impact of this project on their performance in terms of returns. The data used for the analysis come from the survey conducted by the National Agency for Rural Development (ANADER). The average effect was estimated through the propensity score matching method by using the kernel method. The results reveal that the advice and training support of cashew producers has led to a significant increase in yield of 22.4% on average."
   },
   {
     "objectID": "teaching.html",
