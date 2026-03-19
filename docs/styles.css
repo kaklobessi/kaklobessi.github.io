@@ -38,3 +38,8 @@
 .navbar a {
   text-decoration: none !important;
 }
+
+/* Justify body text */
+p {
+  text-align: justify;
+}
