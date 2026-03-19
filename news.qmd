@@ -1,5 +1,5 @@
 ---
-title: "CV"
+title: "News"
 ---
 
 *Coming soon.*

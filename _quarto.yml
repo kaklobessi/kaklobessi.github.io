@@ -10,10 +10,16 @@ website:
     pinned: true
     collapse-after: 3
     left:
+      - href: index.qmd
+        text: Home
       - href: research.qmd
         text: Research
-      - href: about.qmd
-        text: About
+      - href: teaching.qmd
+        text: Teaching
+      - href: cv.qmd
+        text: CV
+      - href: news.qmd
+        text: News
     right:
       - icon: github
         href: https://github.com/kaklobessi

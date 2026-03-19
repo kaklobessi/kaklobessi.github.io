@@ -1,10 +1,17 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
     "section": "",
-    "text": "About this site"
+    "text": "Coming soon."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Kodjo Aklobessi",
+    "section": "",
+    "text": "I am a PhD candidate in Economics at the Université de Montréal. My research lies at the intersection of Family Macroeconomics, Labor economics, and Applied microeconomics.\nMy work focuses on …\n\n\nResearch Interests"
   },
   {
     "objectID": "research.html",
@@ -21,10 +28,31 @@
     "text": "In Progress"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Kodjo Aklobessi",
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
     "section": "",
-    "text": "I am a PhD candidate in Economics at the Université de Montréal. My research lies at the intersection of Family Macroeconomics, Labor economics, and Applied microeconomics.\nMy work focuses on …\n\n\nResearch Interests"
+    "text": "Coming soon."
+  },
+  {
+    "objectID": "teaching.html#courses",
+    "href": "teaching.html#courses",
+    "title": "Teaching",
+    "section": "",
+    "text": "Coming soon."
+  },
+  {
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "News",
+    "section": "",
+    "text": "Coming soon."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
   }
 ]
