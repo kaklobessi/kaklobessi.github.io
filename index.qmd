@@ -11,7 +11,7 @@ about:
       href: https://github.com/kaklobessi
     - icon: linkedin
       text: LinkedIn
-      href: https://www.linkedin.com/in/kaklobessi
+      href: https://www.linkedin.com/in/apollinaire-kodjo-aklobessi-b4477b115/
     - text: "{{< ai google-scholar >}} Google Scholar"
       href: https://scholar.google.com/citations?user=LH6CiwUAAAAJ&hl=en
 ---
