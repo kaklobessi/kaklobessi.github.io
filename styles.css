@@ -44,13 +44,11 @@ p {
   text-align: justify;
 }
 
-/* Widen bio content area in trestles template */
+/* Extend bio text further to the right */
 #quarto-content .about-contents {
-  flex: 1 1 70% !important;
-  max-width: 70% !important;
+  padding-right: 0 !important;
 }
 
-#quarto-content .about-entity {
-  flex: 0 0 28% !important;
-  max-width: 28% !important;
+.about-main {
+  max-width: 100% !important;
 }
