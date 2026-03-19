@@ -19,3 +19,15 @@ title: "Research"
 <summary>Abstract</summary>
 This paper examines the relationship between income and pollution levels by testing the Environmental Kuznets Curve hypothesis in West African nations over 1980–2014. Using GDP per capita as the income measure and analyzing three pollutants (CO₂, nitrogen oxide, and methane emissions), and employing both parametric and non-parametric methods, we find an inverted-U relationship between income and methane as well as nitrogen dioxide emissions. Results for CO₂ are mixed depending on methodology. Overall, the EKC hypothesis is validated for West African countries.
 </details>
+
+---
+
+**Impact du Conseil Agricole sur les Performances des Producteurs d'Anacarde de Côte d'Ivoire**
+<br>with Doukouré Charles Fé
+<br>*European Scientific Journal*, Vol. 14(30), 2018, p. 292
+<br>DOI: [10.19044/esj.2018.v14n30p292](https://doi.org/10.19044/esj.2018.v14n30p292)
+
+<details>
+<summary>Abstract</summary>
+This paper evaluates the impact of agricultural advisory services on cashew farmer productivity in Côte d'Ivoire. Using propensity score matching with kernel methodology applied to National Agency for Rural Development survey data, we find that advice and training support led to a significant average yield increase of 22.4%.
+</details>
