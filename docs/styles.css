@@ -43,3 +43,14 @@
 p {
   text-align: justify;
 }
+
+/* Widen bio content area in trestles template */
+#quarto-content .about-contents {
+  flex: 1 1 70% !important;
+  max-width: 70% !important;
+}
+
+#quarto-content .about-entity {
+  flex: 0 0 28% !important;
+  max-width: 28% !important;
+}
