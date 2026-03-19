@@ -16,6 +16,6 @@ about:
       href: https://scholar.google.com/citations?user=LH6CiwUAAAAJ&hl=en
 ---
 
-I am a PhD candidate in Economics at the **Université de Montréal**. My research lies at the intersection of Family Macroeconomics, Labor Economics, and Applied Microeconometrics.
+I am a third year PhD student in Economics at the **Université de Montréal**. My research lies at the intersection of Family Macroeconomics, Labor Economics, and Applied Microeconometrics.
 
 I have over three years of professional experience working with international and national statistical and development institutions, including the World Bank, AFRISTAT, and INSEED. My work has focused on household survey design, poverty measurement, social protection targeting systems, and applied policy analysis in developing country contexts. Through these roles, I have developed strong expertise in large-scale data collection, econometric analysis, and the translation of empirical research into policy-relevant insights.
