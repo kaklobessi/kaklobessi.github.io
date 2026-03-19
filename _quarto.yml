@@ -20,9 +20,9 @@ website:
         text: CV
       - href: news.qmd
         text: News
-    right:
       - href: resources.qmd
         text: Resources
+    right:
       - icon: github
         href: https://github.com/kaklobessi
         aria-label: GitHub
