@@ -5,13 +5,20 @@ project:
 website:
   title: "Kodjo Aklobessi"
   navbar:
+    pinned: true
+    collapse-after: 3
     left:
-      - href: index.qmd
-        text: Home
       - href: research.qmd
         text: Research
-      - href: cv.qmd
-        text: CV
+      - href: about.qmd
+        text: About
+    right:
+      - icon: github
+        href: https://github.com/kaklobessi
+        aria-label: GitHub
+      - icon: envelope
+        href: mailto:kodjo.aklobessi@umontreal.ca
+        aria-label: Email
   page-footer:
     left: "© 2026 Kodjo Aklobessi"
     right: "PhD Candidate, Université de Montréal"

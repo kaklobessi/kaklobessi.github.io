@@ -9,17 +9,17 @@ about:
     - icon: github
       text: GitHub
       href: https://github.com/kaklobessi
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/kaklobessi
 ---
 
-I am a PhD candidate in Economics at the **Université de Montréal**. My research lies at the intersection of public finance, labor economics, and household behavior.
+I am a PhD candidate in Economics at the **Université de Montréal**. My research lies at the intersection of Family Macroeconomics, Labor economics, and Applied microeconomics.
 
-My work focuses on how tax policy shapes labor supply decisions within households, the role of informal insurance mechanisms, and resource misallocation in developing economies.
+My work focuses on ...
 
 ---
 
 ### Research Interests
 
-- Public Finance & Taxation
-- Labor Supply & Household Economics
-- Development Economics
-- Structural Macroeconomics
+

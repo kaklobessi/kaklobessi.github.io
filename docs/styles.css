@@ -1,1 +1,40 @@
 /* css styles */
+
+/* ── Navbar ─────────────────────────────────────────────── */
+.navbar {
+  background-color: #002366 !important;
+  border-bottom: none;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.navbar-brand {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff !important;
+  letter-spacing: 0.01em;
+}
+
+.navbar-nav .nav-link {
+  font-size: 0.95rem;
+  color: #d0dff7 !important;
+  font-weight: 400;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  transition: color 0.2s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #ffffff !important;
+}
+
+/* Icon links (GitHub, Email) */
+.navbar-nav .nav-link i {
+  font-size: 1.05rem;
+}
+
+/* Remove underline on navbar links */
+.navbar a {
+  text-decoration: none !important;
+}
