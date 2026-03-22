@@ -64,15 +64,45 @@ yearly = Object.entries(gs.citedby_year).map(([year, count]) => ({ year, count }
   .sort((a, b) => a.year - b.year)
 
 Plot.plot({
-  title: "Citations per year (all papers)",
-  width: 600,
-  height: 280,
+  title: "Citations per year",
+  subtitle: "Source: Google Scholar",
+  width: 580,
+  height: 260,
   marginLeft: 45,
-  x: { label: "Year" },
-  y: { label: "Citations", grid: true },
+  marginBottom: 40,
+  style: { fontFamily: "inherit", fontSize: "13px" },
+  x: {
+    label: null,
+    tickFormat: d => String(d),
+    padding: 0.6
+  },
+  y: {
+    label: "Citations",
+    grid: true,
+    tickCount: 4,
+    nice: true
+  },
   marks: [
-    Plot.barY(yearly, { x: "year", y: "count", fill: "#002366", tip: true }),
-    Plot.ruleY([0])
+    Plot.barY(yearly, {
+      x: "year",
+      y: "count",
+      fill: "#002366",
+      fillOpacity: 0.85,
+      insetLeft: 12,
+      insetRight: 12,
+      rx: 3,
+      tip: true
+    }),
+    Plot.text(yearly, {
+      x: "year",
+      y: "count",
+      text: d => String(d.count),
+      dy: -8,
+      fontSize: 12,
+      fontWeight: "600",
+      fill: "#002366"
+    }),
+    Plot.ruleY([0], { stroke: "#ccc" })
   ]
 })
 ```
