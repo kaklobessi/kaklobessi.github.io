@@ -2,12 +2,6 @@
 title: "Research"
 ---
 
-```{ojs}
-//| echo: false
-ekc = await fetch("https://api.openalex.org/works/https://doi.org/10.21511/ee.12(1).2021.06").then(r => r.json())
-anacarde = await fetch("https://api.openalex.org/works/https://doi.org/10.19044/esj.2018.v14n30p292").then(r => r.json())
-```
-
 ## Working Papers
 
 *Coming soon.*
@@ -21,28 +15,6 @@ anacarde = await fetch("https://api.openalex.org/works/https://doi.org/10.19044/
 <br>*Environmental Economics*, Vol. 12(1), 2021, pp. 64–75
 <br>DOI: [10.21511/ee.12(1).2021.06](http://dx.doi.org/10.21511/ee.12(1).2021.06)
 
-```{ojs}
-//| echo: false
-{
-  const rows = (ekc.counts_by_year || []).sort((a,b) => a.year - b.year)
-  return html`<div style="display:flex; align-items:center; gap:1.2rem; margin:0.4rem 0 0.8rem 0;">
-    <div style="background:#002366; color:white; border-radius:6px; padding:0.3rem 0.8rem; font-size:0.85rem; white-space:nowrap;">
-      📄 <strong>${ekc.cited_by_count}</strong> citations
-    </div>
-    ${Plot.plot({
-      width: 220, height: 60,
-      marginTop: 5, marginBottom: 18, marginLeft: 28, marginRight: 5,
-      x: { tickFormat: d => String(d), label: null },
-      y: { label: null, grid: false, ticks: 2 },
-      marks: [
-        Plot.barY(rows, { x: d => String(d.year), y: "cited_by_count", fill: "#002366" }),
-        Plot.ruleY([0])
-      ]
-    })}
-  </div>`
-}
-```
-
 <details>
 <summary>Abstract</summary>
 This paper analyzes the revenue-pollution relationship by revisiting the Environmental Kuznets Curve (EKC) hypothesis for West African countries over the period of 1980–2014. The study approximates the income measurement by GDP per capita and uses carbon dioxide (CO2), nitrogen oxide (NO2), and methane emissions as various environmental quality measures. The paper uses parametric and non-parametric estimation techniques to test the EKC hypothesis. The results support the existence of the U-inverted relationship between income and methane emission, on one hand, and between income and nitrogen dioxide emission on the other. The estimates also show a mixed result for the U-inverted hypothesis between income and carbon dioxide emissions. Thus, the verification of the curve depends on the estimation techniques and the measurement of the pollutant used. The obtained results led to the conclusion that the EKC hypothesis is validated for West African countries.
@@ -55,29 +27,77 @@ This paper analyzes the revenue-pollution relationship by revisiting the Environ
 <br>*European Scientific Journal*, Vol. 14(30), 2018, p. 292
 <br>DOI: [10.19044/esj.2018.v14n30p292](https://doi.org/10.19044/esj.2018.v14n30p292)
 
-```{ojs}
-//| echo: false
-{
-  const rows = (anacarde.counts_by_year || []).sort((a,b) => a.year - b.year)
-  return html`<div style="display:flex; align-items:center; gap:1.2rem; margin:0.4rem 0 0.8rem 0;">
-    <div style="background:#002366; color:white; border-radius:6px; padding:0.3rem 0.8rem; font-size:0.85rem; white-space:nowrap;">
-      📄 <strong>${anacarde.cited_by_count}</strong> citations
-    </div>
-    ${Plot.plot({
-      width: 220, height: 60,
-      marginTop: 5, marginBottom: 18, marginLeft: 28, marginRight: 5,
-      x: { tickFormat: d => String(d), label: null },
-      y: { label: null, grid: false, ticks: 2 },
-      marks: [
-        Plot.barY(rows, { x: d => String(d.year), y: "cited_by_count", fill: "#002366" }),
-        Plot.ruleY([0])
-      ]
-    })}
-  </div>`
-}
-```
-
 <details>
 <summary>Abstract</summary>
 The cashew sector has been booming in Côte d'Ivoire for the last three years. In the face of international competition, it appeared important to improve the performance of producers in order to maintain the comparative advantages of Côte d'Ivoire. In this perspective, the agricultural advisory project was set up to train cashew farmers in good practices. This study aims to evaluate the impact of this project on their performance in terms of returns. The data used for the analysis come from the survey conducted by the National Agency for Rural Development (ANADER). The average effect was estimated through the propensity score matching method by using the kernel method. The results reveal that the advice and training support of cashew producers has led to a significant increase in yield of 22.4% on average.
 </details>
+
+---
+
+## Citation Metrics
+
+*Data sourced live from [OpenAlex](https://openalex.org).*
+
+```{ojs}
+//| echo: false
+
+// Fetch citation data for both papers from OpenAlex API
+ekc = await fetch("https://api.openalex.org/works/https://doi.org/10.21511/ee.12(1).2021.06")
+  .then(r => r.json())
+
+anacarde = await fetch("https://api.openalex.org/works/https://doi.org/10.19044/esj.2018.v14n30p292")
+  .then(r => r.json())
+
+// Build combined dataset
+data = {
+  const ekc_rows = (ekc.counts_by_year || []).map(d => ({
+    year: d.year,
+    citations: d.cited_by_count,
+    paper: "EKC West Africa (2021)"
+  }))
+  const ana_rows = (anacarde.counts_by_year || []).map(d => ({
+    year: d.year,
+    citations: d.cited_by_count,
+    paper: "Cashew Farmers CI (2018)"
+  }))
+  return [...ekc_rows, ...ana_rows].sort((a,b) => a.year - b.year)
+}
+
+// Summary cards
+html`
+<div style="display:flex; gap:2rem; margin-bottom:1.5rem; flex-wrap:wrap;">
+  <div style="background:#002366; color:white; border-radius:8px; padding:1rem 2rem; text-align:center;">
+    <div style="font-size:2rem; font-weight:700;">${ekc.cited_by_count}</div>
+    <div style="font-size:0.85rem; opacity:0.85;">citations — EKC West Africa</div>
+  </div>
+  <div style="background:#002366; color:white; border-radius:8px; padding:1rem 2rem; text-align:center;">
+    <div style="font-size:2rem; font-weight:700;">${anacarde.cited_by_count}</div>
+    <div style="font-size:0.85rem; opacity:0.85;">citations — Cashew Farmers CI</div>
+  </div>
+  <div style="background:#1a4a8a; color:white; border-radius:8px; padding:1rem 2rem; text-align:center;">
+    <div style="font-size:2rem; font-weight:700;">${ekc.cited_by_count + anacarde.cited_by_count}</div>
+    <div style="font-size:0.85rem; opacity:0.85;">total citations</div>
+  </div>
+</div>`
+
+// Bar chart
+Plot.plot({
+  title: "Citations per year",
+  width: 650,
+  height: 300,
+  marginLeft: 50,
+  x: { label: "Year", tickFormat: d => String(d) },
+  y: { label: "Citations", grid: true },
+  color: { legend: true, range: ["#002366", "#e8a020"] },
+  marks: [
+    Plot.barY(data, {
+      x: "year",
+      y: "citations",
+      fill: "paper",
+      fx: "paper",
+      tip: true
+    }),
+    Plot.ruleY([0])
+  ]
+})
+```
