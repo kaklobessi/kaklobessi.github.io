@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -71,6 +106,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -352,11 +389,120 @@ Abstract
 </summary>
 The cashew sector has been booming in Côte d’Ivoire for the last three years. In the face of international competition, it appeared important to improve the performance of producers in order to maintain the comparative advantages of Côte d’Ivoire. In this perspective, the agricultural advisory project was set up to train cashew farmers in good practices. This study aims to evaluate the impact of this project on their performance in terms of returns. The data used for the analysis come from the survey conducted by the National Agency for Rural Development (ANADER). The average effect was estimated through the propensity score matching method by using the kernel method. The results reveal that the advice and training support of cashew producers has led to a significant increase in yield of 22.4% on average.
 </details>
+<hr>
+</section>
+<section id="citation-metrics" class="level2">
+<h2 class="anchored" data-anchor-id="citation-metrics">Citation Metrics</h2>
+<p><em>Data sourced live from <a href="https://openalex.org">OpenAlex</a>.</em></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="45" data-source-offset="-58"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 44;"><span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>ekc <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(<span class="st">"https://api.openalex.org/works/https://doi.org/10.21511/ee.12(1).2021.06"</span>)</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">then</span>(r <span class="kw">=&gt;</span> r<span class="op">.</span><span class="fu">json</span>())</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>anacarde <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(<span class="st">"https://api.openalex.org/works/https://doi.org/10.19044/esj.2018.v14n30p292"</span>)</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">then</span>(r <span class="kw">=&gt;</span> r<span class="op">.</span><span class="fu">json</span>())</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="co">// Build combined dataset</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> {</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> ekc_rows <span class="op">=</span> (ekc<span class="op">.</span><span class="at">counts_by_year</span> <span class="op">||</span> [])<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> ({</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>    <span class="dt">year</span><span class="op">:</span> d<span class="op">.</span><span class="at">year</span><span class="op">,</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>    <span class="dt">citations</span><span class="op">:</span> d<span class="op">.</span><span class="at">cited_by_count</span><span class="op">,</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>    <span class="dt">paper</span><span class="op">:</span> <span class="st">"EKC West Africa (2021)"</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>  }))</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> ana_rows <span class="op">=</span> (anacarde<span class="op">.</span><span class="at">counts_by_year</span> <span class="op">||</span> [])<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> ({</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>    <span class="dt">year</span><span class="op">:</span> d<span class="op">.</span><span class="at">year</span><span class="op">,</span></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>    <span class="dt">citations</span><span class="op">:</span> d<span class="op">.</span><span class="at">cited_by_count</span><span class="op">,</span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>    <span class="dt">paper</span><span class="op">:</span> <span class="st">"Cashew Farmers CI (2018)"</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>  }))</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> [<span class="op">...</span>ekc_rows<span class="op">,</span> <span class="op">...</span>ana_rows]<span class="op">.</span><span class="fu">sort</span>((a<span class="op">,</span>b) <span class="kw">=&gt;</span> a<span class="op">.</span><span class="at">year</span> <span class="op">-</span> b<span class="op">.</span><span class="at">year</span>)</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="co">// Summary cards</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;div style="display:flex; gap:2rem; margin-bottom:1.5rem; flex-wrap:wrap;"&gt;</span></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;div style="background:#002366; color:white; border-radius:8px; padding:1rem 2rem; text-align:center;"&gt;</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;div style="font-size:2rem; font-weight:700;"&gt;</span><span class="sc">${</span>ekc<span class="op">.</span><span class="at">cited_by_count</span><span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;div style="font-size:0.85rem; opacity:0.85;"&gt;citations — EKC West Africa&lt;/div&gt;</span></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/div&gt;</span></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;div style="background:#002366; color:white; border-radius:8px; padding:1rem 2rem; text-align:center;"&gt;</span></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;div style="font-size:2rem; font-weight:700;"&gt;</span><span class="sc">${</span>anacarde<span class="op">.</span><span class="at">cited_by_count</span><span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;div style="font-size:0.85rem; opacity:0.85;"&gt;citations — Cashew Farmers CI&lt;/div&gt;</span></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/div&gt;</span></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;div style="background:#1a4a8a; color:white; border-radius:8px; padding:1rem 2rem; text-align:center;"&gt;</span></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;div style="font-size:2rem; font-weight:700;"&gt;</span><span class="sc">${</span>ekc<span class="op">.</span><span class="at">cited_by_count</span> <span class="op">+</span> anacarde<span class="op">.</span><span class="at">cited_by_count</span><span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;div style="font-size:0.85rem; opacity:0.85;"&gt;total citations&lt;/div&gt;</span></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/div&gt;</span></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/div&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-4" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="84" data-source-offset="-1689"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 83;"><span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span><span class="op">:</span> <span class="st">"Citations per year"</span><span class="op">,</span></span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">650</span><span class="op">,</span></span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">300</span><span class="op">,</span></span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span></span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Year"</span><span class="op">,</span> <span class="dt">tickFormat</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="bu">String</span>(d) }<span class="op">,</span></span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Citations"</span><span class="op">,</span> <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span> }<span class="op">,</span></span>
+<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> { <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span> <span class="dt">range</span><span class="op">:</span> [<span class="st">"#002366"</span><span class="op">,</span> <span class="st">"#e8a020"</span>] }<span class="op">,</span></span>
+<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">barY</span>(data<span class="op">,</span> {</span>
+<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"year"</span><span class="op">,</span></span>
+<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">"citations"</span><span class="op">,</span></span>
+<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"paper"</span><span class="op">,</span></span>
+<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fx</span><span class="op">:</span> <span class="st">"paper"</span><span class="op">,</span></span>
+<span id="cb2-98"><a href="#cb2-98" aria-hidden="true" tabindex="-1"></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb2-99"><a href="#cb2-99" aria-hidden="true" tabindex="-1"></a>    })<span class="op">,</span></span>
+<span id="cb2-100"><a href="#cb2-100" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">ruleY</span>([<span class="dv">0</span>])</span>
+<span id="cb2-101"><a href="#cb2-101" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="cb2-102"><a href="#cb2-102" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-5" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
 
 
 </section>
 
 </main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy8gRmV0Y2ggY2l0YXRpb24gZGF0YSBmb3IgYm90aCBwYXBlcnMgZnJvbSBPcGVuQWxleCBBUElcbmVrYyA9IGF3YWl0IGZldGNoKFwiaHR0cHM6Ly9hcGkub3BlbmFsZXgub3JnL3dvcmtzL2h0dHBzOi8vZG9pLm9yZy8xMC4yMTUxMS9lZS4xMigxKS4yMDIxLjA2XCIpXG4gIC50aGVuKHIgPT4gci5qc29uKCkpXG5cbmFuYWNhcmRlID0gYXdhaXQgZmV0Y2goXCJodHRwczovL2FwaS5vcGVuYWxleC5vcmcvd29ya3MvaHR0cHM6Ly9kb2kub3JnLzEwLjE5MDQ0L2Vzai4yMDE4LnYxNG4zMHAyOTJcIilcbiAgLnRoZW4ociA9PiByLmpzb24oKSlcblxuLy8gQnVpbGQgY29tYmluZWQgZGF0YXNldFxuZGF0YSA9IHtcbiAgY29uc3QgZWtjX3Jvd3MgPSAoZWtjLmNvdW50c19ieV95ZWFyIHx8IFtdKS5tYXAoZCA9PiAoe1xuICAgIHllYXI6IGQueWVhcixcbiAgICBjaXRhdGlvbnM6IGQuY2l0ZWRfYnlfY291bnQsXG4gICAgcGFwZXI6IFwiRUtDIFdlc3QgQWZyaWNhICgyMDIxKVwiXG4gIH0pKVxuICBjb25zdCBhbmFfcm93cyA9IChhbmFjYXJkZS5jb3VudHNfYnlfeWVhciB8fCBbXSkubWFwKGQgPT4gKHtcbiAgICB5ZWFyOiBkLnllYXIsXG4gICAgY2l0YXRpb25zOiBkLmNpdGVkX2J5X2NvdW50LFxuICAgIHBhcGVyOiBcIkNhc2hldyBGYXJtZXJzIENJICgyMDE4KVwiXG4gIH0pKVxuICByZXR1cm4gWy4uLmVrY19yb3dzLCAuLi5hbmFfcm93c10uc29ydCgoYSxiKSA9PiBhLnllYXIgLSBiLnllYXIpXG59XG5cbi8vIFN1bW1hcnkgY2FyZHNcbmh0bWxgXG48ZGl2IHN0eWxlPVwiZGlzcGxheTpmbGV4OyBnYXA6MnJlbTsgbWFyZ2luLWJvdHRvbToxLjVyZW07IGZsZXgtd3JhcDp3cmFwO1wiPlxuICA8ZGl2IHN0eWxlPVwiYmFja2dyb3VuZDojMDAyMzY2OyBjb2xvcjp3aGl0ZTsgYm9yZGVyLXJhZGl1czo4cHg7IHBhZGRpbmc6MXJlbSAycmVtOyB0ZXh0LWFsaWduOmNlbnRlcjtcIj5cbiAgICA8ZGl2IHN0eWxlPVwiZm9udC1zaXplOjJyZW07IGZvbnQtd2VpZ2h0OjcwMDtcIj4ke2VrYy5jaXRlZF9ieV9jb3VudH08L2Rpdj5cbiAgICA8ZGl2IHN0eWxlPVwiZm9udC1zaXplOjAuODVyZW07IG9wYWNpdHk6MC44NTtcIj5jaXRhdGlvbnMg4oCUIEVLQyBXZXN0IEFmcmljYTwvZGl2PlxuICA8L2Rpdj5cbiAgPGRpdiBzdHlsZT1cImJhY2tncm91bmQ6IzAwMjM2NjsgY29sb3I6d2hpdGU7IGJvcmRlci1yYWRpdXM6OHB4OyBwYWRkaW5nOjFyZW0gMnJlbTsgdGV4dC1hbGlnbjpjZW50ZXI7XCI+XG4gICAgPGRpdiBzdHlsZT1cImZvbnQtc2l6ZToycmVtOyBmb250LXdlaWdodDo3MDA7XCI+JHthbmFjYXJkZS5jaXRlZF9ieV9jb3VudH08L2Rpdj5cbiAgICA8ZGl2IHN0eWxlPVwiZm9udC1zaXplOjAuODVyZW07IG9wYWNpdHk6MC44NTtcIj5jaXRhdGlvbnMg4oCUIENhc2hldyBGYXJtZXJzIENJPC9kaXY+XG4gIDwvZGl2PlxuICA8ZGl2IHN0eWxlPVwiYmFja2dyb3VuZDojMWE0YThhOyBjb2xvcjp3aGl0ZTsgYm9yZGVyLXJhZGl1czo4cHg7IHBhZGRpbmc6MXJlbSAycmVtOyB0ZXh0LWFsaWduOmNlbnRlcjtcIj5cbiAgICA8ZGl2IHN0eWxlPVwiZm9udC1zaXplOjJyZW07IGZvbnQtd2VpZ2h0OjcwMDtcIj4ke2VrYy5jaXRlZF9ieV9jb3VudCArIGFuYWNhcmRlLmNpdGVkX2J5X2NvdW50fTwvZGl2PlxuICAgIDxkaXYgc3R5bGU9XCJmb250LXNpemU6MC44NXJlbTsgb3BhY2l0eTowLjg1O1wiPnRvdGFsIGNpdGF0aW9uczwvZGl2PlxuICA8L2Rpdj5cbjwvZGl2PmBcblxuLy8gQmFyIGNoYXJ0XG5QbG90LnBsb3Qoe1xuICB0aXRsZTogXCJDaXRhdGlvbnMgcGVyIHllYXJcIixcbiAgd2lkdGg6IDY1MCxcbiAgaGVpZ2h0OiAzMDAsXG4gIG1hcmdpbkxlZnQ6IDUwLFxuICB4OiB7IGxhYmVsOiBcIlllYXJcIiwgdGlja0Zvcm1hdDogZCA9PiBTdHJpbmcoZCkgfSxcbiAgeTogeyBsYWJlbDogXCJDaXRhdGlvbnNcIiwgZ3JpZDogdHJ1ZSB9LFxuICBjb2xvcjogeyBsZWdlbmQ6IHRydWUsIHJhbmdlOiBbXCIjMDAyMzY2XCIsIFwiI2U4YTAyMFwiXSB9LFxuICBtYXJrczogW1xuICAgIFBsb3QuYmFyWShkYXRhLCB7XG4gICAgICB4OiBcInllYXJcIixcbiAgICAgIHk6IFwiY2l0YXRpb25zXCIsXG4gICAgICBmaWxsOiBcInBhcGVyXCIsXG4gICAgICBmeDogXCJwYXBlclwiLFxuICAgICAgdGlwOiB0cnVlXG4gICAgfSksXG4gICAgUGxvdC5ydWxlWShbMF0pXG4gIF1cbn0pXG4ifV19
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../..";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
