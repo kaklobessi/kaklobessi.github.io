@@ -1,0 +1,25 @@
+{
+  "total_citations": 15,
+  "h_index": 2,
+  "i10_index": 1,
+  "citedby_year": {
+    "2022": 2,
+    "2023": 5,
+    "2024": 2,
+    "2025": 6
+  },
+  "papers": [
+    {
+      "title": "Impact du conseil agricole sur les performances des producteurs d\u2019anacarde de Cote d\u2019Ivoire",
+      "year": 2018,
+      "cited_by_count": 10,
+      "journal": "European Scientific Journal"
+    },
+    {
+      "title": "Revisiting the environmental Kuznets curve: evidence from West Africa",
+      "year": 2021,
+      "cited_by_count": 5,
+      "journal": "Environmental Economics."
+    }
+  ]
+}

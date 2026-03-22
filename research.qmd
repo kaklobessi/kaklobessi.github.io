@@ -36,67 +36,42 @@ The cashew sector has been booming in Côte d'Ivoire for the last three years. I
 
 ## Citation Metrics
 
-*Data sourced live from [OpenAlex](https://openalex.org).*
+*Source: [Google Scholar](https://scholar.google.com/citations?user=LH6CiwUAAAAJ&hl=en)*
 
 ```{ojs}
 //| echo: false
-
-// Fetch citation data for both papers from OpenAlex API
-ekc = await fetch("https://api.openalex.org/works/https://doi.org/10.21511/ee.12(1).2021.06")
-  .then(r => r.json())
-
-anacarde = await fetch("https://api.openalex.org/works/https://doi.org/10.19044/esj.2018.v14n30p292")
-  .then(r => r.json())
-
-// Build combined dataset
-data = {
-  const ekc_rows = (ekc.counts_by_year || []).map(d => ({
-    year: d.year,
-    citations: d.cited_by_count,
-    paper: "EKC West Africa (2021)"
-  }))
-  const ana_rows = (anacarde.counts_by_year || []).map(d => ({
-    year: d.year,
-    citations: d.cited_by_count,
-    paper: "Cashew Farmers CI (2018)"
-  }))
-  return [...ekc_rows, ...ana_rows].sort((a,b) => a.year - b.year)
-}
+gs = await fetch("citations_gs.json").then(r => r.json())
 
 // Summary cards
 html`
-<div style="display:flex; gap:2rem; margin-bottom:1.5rem; flex-wrap:wrap;">
-  <div style="background:#002366; color:white; border-radius:8px; padding:1rem 2rem; text-align:center;">
-    <div style="font-size:2rem; font-weight:700;">${ekc.cited_by_count}</div>
-    <div style="font-size:0.85rem; opacity:0.85;">citations — EKC West Africa</div>
+<div style="display:flex; gap:1.5rem; margin-bottom:1.8rem; flex-wrap:wrap;">
+  <div style="background:#002366; color:white; border-radius:8px; padding:1rem 1.8rem; text-align:center;">
+    <div style="font-size:2rem; font-weight:700;">${gs.total_citations}</div>
+    <div style="font-size:0.82rem; opacity:0.85;">Total Citations</div>
   </div>
-  <div style="background:#002366; color:white; border-radius:8px; padding:1rem 2rem; text-align:center;">
-    <div style="font-size:2rem; font-weight:700;">${anacarde.cited_by_count}</div>
-    <div style="font-size:0.85rem; opacity:0.85;">citations — Cashew Farmers CI</div>
+  <div style="background:#002366; color:white; border-radius:8px; padding:1rem 1.8rem; text-align:center;">
+    <div style="font-size:2rem; font-weight:700;">${gs.h_index}</div>
+    <div style="font-size:0.82rem; opacity:0.85;">h-index</div>
   </div>
-  <div style="background:#1a4a8a; color:white; border-radius:8px; padding:1rem 2rem; text-align:center;">
-    <div style="font-size:2rem; font-weight:700;">${ekc.cited_by_count + anacarde.cited_by_count}</div>
-    <div style="font-size:0.85rem; opacity:0.85;">total citations</div>
+  <div style="background:#002366; color:white; border-radius:8px; padding:1rem 1.8rem; text-align:center;">
+    <div style="font-size:2rem; font-weight:700;">${gs.i10_index}</div>
+    <div style="font-size:0.82rem; opacity:0.85;">i10-index</div>
   </div>
 </div>`
 
-// Bar chart
+// Citations per year chart
+yearly = Object.entries(gs.citedby_year).map(([year, count]) => ({ year, count }))
+  .sort((a, b) => a.year - b.year)
+
 Plot.plot({
-  title: "Citations per year",
-  width: 650,
-  height: 300,
-  marginLeft: 50,
-  x: { label: "Year", tickFormat: d => String(d) },
+  title: "Citations per year (all papers)",
+  width: 600,
+  height: 280,
+  marginLeft: 45,
+  x: { label: "Year" },
   y: { label: "Citations", grid: true },
-  color: { legend: true, range: ["#002366", "#e8a020"] },
   marks: [
-    Plot.barY(data, {
-      x: "year",
-      y: "citations",
-      fill: "paper",
-      fx: "paper",
-      tip: true
-    }),
+    Plot.barY(yearly, { x: "year", y: "count", fill: "#002366", tip: true }),
     Plot.ruleY([0])
   ]
 })

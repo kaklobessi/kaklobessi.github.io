@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - citations_gs.json
 
 website:
   title: "Kodjo Aklobessi"
