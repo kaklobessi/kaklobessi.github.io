@@ -2,6 +2,8 @@
 title: "Kodjo Aklobessi"
 about:
   template: trestles
+  image: Photo_AKLOBESSI.jpg
+  image-shape: round
   links:
     - icon: envelope
       text: Email
