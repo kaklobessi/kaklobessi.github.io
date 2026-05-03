@@ -16,7 +16,7 @@ title: "Teaching"
 |---|---|---|
 | ECN 1050 — Introduction to Macroeconomics | Undergraduate | Winter 2024, Winter 2026 |
 | ECN 1070 — Mathematics for Economics I | Undergraduate | Winter 2025, Fall 2025 |
-| ECN 1075 — Mathematics for Economics II | Undergraduate | Summer 2024 |
+| ECN 1075 — Mathematics for Economics II | Undergraduate | Summer 2024, Summer 2026 |
 | ECN 1700 — Economics and Globalization | Undergraduate | Summer 2024 |
 
 
