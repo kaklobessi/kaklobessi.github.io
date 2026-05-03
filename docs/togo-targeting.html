@@ -72,26 +72,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <meta name="google-site-verification" content="SvmyFWn3Jif2EbxAUtl1iCyAvJrpDGBnFYFy-8HgIkw">
-<script>
-(function() {
-  function applyDarkClass() {
-    var alt = document.querySelector('link.quarto-color-alternate');
-    if (alt && !alt.disabled) {
-      document.body.classList.add('quarto-dark');
-    } else {
-      document.body.classList.remove('quarto-dark');
-    }
-  }
-  document.addEventListener('DOMContentLoaded', function() {
-    applyDarkClass();
-    var links = document.querySelectorAll('link.quarto-color-scheme');
-    var observer = new MutationObserver(applyDarkClass);
-    links.forEach(function(el) {
-      observer.observe(el, { attributes: true, attributeFilter: ['disabled'] });
-    });
-  });
-})();
-</script>
 
 
 <link rel="stylesheet" href="styles.css">
