@@ -12,7 +12,7 @@ This project builds a composite priority index to rank cantons and neighborhoods
 
 ## Methodology
 
-Each indicator is normalized to a 0–1 scale and aggregated into a weighted composite score. Territorial units are then ranked and classified into quintiles — the top quintile identifies areas of overlapping deprivation.
+Each indicator is normalized to a 0–1 scale and aggregated into a weighted composite score. Territorial units are then ranked and classified into quintiles. the top quintile identifies areas of overlapping deprivation.
 
 The index operates at two scales: **canton** (national coverage) and **neighborhood** (Greater Lomé).
 
