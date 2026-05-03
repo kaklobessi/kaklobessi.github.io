@@ -8,7 +8,7 @@ Applied projects at the intersection of data, development, and public policy.
 
 ## Spatial Targeting Tool for Togo
 
-*A composite priority index combining census, satellite, and geospatial data to rank territories by vulnerability — supporting evidence-based allocation of social and infrastructure investments.*
+*A composite priority index combining census, satellite, and geospatial data to rank territories by vulnerability, supporting evidence-based allocation of social and infrastructure investments.*
 
 ```{=html}
 <div style="display:flex; flex-direction:column; gap:0.6rem; margin-top:1.2rem;">
@@ -154,7 +154,7 @@ Applied projects at the intersection of data, development, and public policy.
         <p style="font-weight:600; color:#002366; margin-bottom:0.8rem; font-size:0.95rem;">Poverty–Wealth Quadrant Analysis — Cantons (excl. Lomé)</p>
         <img src="images/rwi_fgt0_quadrant_scatter_sans_lome.png" style="width:100%; border-radius:6px; border:1px solid #dde3f0;">
         <p style="font-size:0.8rem; color:#555; margin-top:0.5rem; line-height:1.5;">
-          Each canton is positioned along two dimensions: the poverty headcount ratio FGT(0) on the vertical axis and the mean Relative Wealth Index on the horizontal axis. The four quadrants define a targeting typology — Priority I (high poverty, low wealth) cantons represent the most acute cases of combined deprivation and are primary targets for social protection interventions. Canton names: INSEED-Togo.
+          Each canton is positioned along two dimensions: the poverty headcount ratio FGT(0) on the vertical axis and the mean Relative Wealth Index on the horizontal axis. The four quadrants define a targeting typology. Priority I cantons (high poverty, low wealth) represent the most acute cases of combined deprivation and are primary targets for social protection interventions. For canton-level identification on this chart, please <a href="mailto:kodjo.aklobessi@umontreal.ca" style="color:#002366;">contact the author</a>.
         </p>
       </div>
 
