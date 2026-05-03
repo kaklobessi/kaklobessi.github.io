@@ -10,52 +10,96 @@ Applied projects at the intersection of data, development, and public policy.
 
 *A composite priority index combining census, satellite, and geospatial data to rank territories by vulnerability — supporting evidence-based allocation of social and infrastructure investments.*
 
----
-
 ```{=html}
-<details style="margin-bottom:1rem;">
-  <summary style="cursor:pointer; font-weight:600; color:#002366; font-size:1rem; padding:0.6rem 0; list-style:none; display:flex; align-items:center; gap:0.5rem;">
-    <span>▶</span> Methodology
-  </summary>
-  <div style="padding:1rem 1.2rem; border-left:3px solid #002366; margin-top:0.5rem; color:#333; line-height:1.7;">
-    <p>Each indicator is normalized to a 0–1 scale and aggregated into a weighted composite score. Territorial units are then ranked and classified into quintiles — the top quintile identifies areas of overlapping deprivation.</p>
-    <p style="margin-bottom:0;">The index operates at two scales: <strong>canton</strong> (national coverage) and <strong>neighborhood</strong> (Greater Lomé).</p>
-  </div>
-</details>
+<div style="display:flex; flex-direction:column; gap:0.6rem; margin-top:1.2rem;">
 
-<details style="margin-bottom:1rem;">
-  <summary style="cursor:pointer; font-weight:600; color:#002366; font-size:1rem; padding:0.6rem 0; list-style:none; display:flex; align-items:center; gap:0.5rem;">
-    <span>▶</span> Inputs
-  </summary>
-  <div style="padding:1rem 1.2rem; border-left:3px solid #002366; margin-top:0.5rem;">
-    <table style="width:100%; border-collapse:collapse; font-size:0.92rem;">
-      <thead>
-        <tr style="border-bottom:2px solid #002366;">
-          <th style="text-align:left; padding:0.4rem 0.8rem; color:#002366;">Indicator</th>
-          <th style="text-align:left; padding:0.4rem 0.8rem; color:#002366;">Source</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr style="border-bottom:1px solid #eee;"><td style="padding:0.4rem 0.8rem;">Population & poverty</td><td style="padding:0.4rem 0.8rem; color:#555;">RGPH 2022, EHCVM</td></tr>
-        <tr style="border-bottom:1px solid #eee;"><td style="padding:0.4rem 0.8rem;">Nighttime lights</td><td style="padding:0.4rem 0.8rem; color:#555;">NASA VIIRS</td></tr>
-        <tr style="border-bottom:1px solid #eee;"><td style="padding:0.4rem 0.8rem;">Relative wealth</td><td style="padding:0.4rem 0.8rem; color:#555;">Meta RWI</td></tr>
-        <tr style="border-bottom:1px solid #eee;"><td style="padding:0.4rem 0.8rem;">Service accessibility</td><td style="padding:0.4rem 0.8rem; color:#555;">OpenStreetMap</td></tr>
-        <tr style="border-bottom:1px solid #eee;"><td style="padding:0.4rem 0.8rem;">Road network</td><td style="padding:0.4rem 0.8rem; color:#555;">OpenStreetMap</td></tr>
-        <tr style="border-bottom:1px solid #eee;"><td style="padding:0.4rem 0.8rem;">Flood risk</td><td style="padding:0.4rem 0.8rem; color:#555;">GFD / FATHOM</td></tr>
-        <tr><td style="padding:0.4rem 0.8rem;">Built-up density</td><td style="padding:0.4rem 0.8rem; color:#555;">GHSL</td></tr>
-      </tbody>
-    </table>
-  </div>
-</details>
+  <!-- Methodology -->
+  <details style="border-radius:6px; overflow:hidden;">
+    <summary style="
+      list-style:none;
+      cursor:pointer;
+      background:#002366;
+      color:white;
+      font-weight:600;
+      font-size:0.95rem;
+      padding:0.75rem 1.2rem;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      user-select:none;
+    ">
+      Methodology
+      <span style="font-size:0.8rem; opacity:0.8;">▼</span>
+    </summary>
+    <div style="padding:1.1rem 1.4rem; background:#f5f8ff; color:#333; line-height:1.7; font-size:0.93rem;">
+      <p>Each indicator is normalized to a 0–1 scale and aggregated into a weighted composite score. Units are ranked and classified into quintiles — the top quintile identifies areas of overlapping deprivation.</p>
+      <p style="margin-bottom:0;">The index operates at two scales: <strong>canton</strong> (national coverage) and <strong>neighborhood</strong> (Greater Lomé).</p>
+    </div>
+  </details>
 
-<details style="margin-bottom:1rem;">
-  <summary style="cursor:pointer; font-weight:600; color:#002366; font-size:1rem; padding:0.6rem 0; list-style:none; display:flex; align-items:center; gap:0.5rem;">
-    <span>▶</span> Results
-  </summary>
-  <div style="padding:1rem 1.2rem; border-left:3px solid #002366; margin-top:0.5rem; color:#555; font-style:italic;">
-    Coming soon.
-  </div>
-</details>
+  <!-- Inputs -->
+  <details style="border-radius:6px; overflow:hidden;">
+    <summary style="
+      list-style:none;
+      cursor:pointer;
+      background:#002366;
+      color:white;
+      font-weight:600;
+      font-size:0.95rem;
+      padding:0.75rem 1.2rem;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      user-select:none;
+    ">
+      Inputs
+      <span style="font-size:0.8rem; opacity:0.8;">▼</span>
+    </summary>
+    <div style="padding:1.1rem 1.4rem; background:#f5f8ff;">
+      <table style="width:100%; border-collapse:collapse; font-size:0.92rem;">
+        <thead>
+          <tr style="border-bottom:2px solid #002366;">
+            <th style="text-align:left; padding:0.4rem 0.6rem; color:#002366;">Indicator</th>
+            <th style="text-align:left; padding:0.4rem 0.6rem; color:#002366;">Source</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #dde3f0;"><td style="padding:0.4rem 0.6rem;">Population & poverty</td><td style="padding:0.4rem 0.6rem; color:#555;">RGPH 2022, EHCVM</td></tr>
+          <tr style="border-bottom:1px solid #dde3f0;"><td style="padding:0.4rem 0.6rem;">Nighttime lights</td><td style="padding:0.4rem 0.6rem; color:#555;">NASA VIIRS</td></tr>
+          <tr style="border-bottom:1px solid #dde3f0;"><td style="padding:0.4rem 0.6rem;">Relative wealth</td><td style="padding:0.4rem 0.6rem; color:#555;">Meta RWI</td></tr>
+          <tr style="border-bottom:1px solid #dde3f0;"><td style="padding:0.4rem 0.6rem;">Service accessibility</td><td style="padding:0.4rem 0.6rem; color:#555;">OpenStreetMap</td></tr>
+          <tr style="border-bottom:1px solid #dde3f0;"><td style="padding:0.4rem 0.6rem;">Road network</td><td style="padding:0.4rem 0.6rem; color:#555;">OpenStreetMap</td></tr>
+          <tr style="border-bottom:1px solid #dde3f0;"><td style="padding:0.4rem 0.6rem;">Flood risk</td><td style="padding:0.4rem 0.6rem; color:#555;">GFD / FATHOM</td></tr>
+          <tr><td style="padding:0.4rem 0.6rem;">Built-up density</td><td style="padding:0.4rem 0.6rem; color:#555;">GHSL</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <!-- Results -->
+  <details style="border-radius:6px; overflow:hidden;">
+    <summary style="
+      list-style:none;
+      cursor:pointer;
+      background:#002366;
+      color:white;
+      font-weight:600;
+      font-size:0.95rem;
+      padding:0.75rem 1.2rem;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      user-select:none;
+    ">
+      Results
+      <span style="font-size:0.8rem; opacity:0.8;">▼</span>
+    </summary>
+    <div style="padding:1.1rem 1.4rem; background:#f5f8ff; color:#555; font-style:italic; font-size:0.93rem;">
+      Coming soon.
+    </div>
+  </details>
+
+</div>
 ```
 
 :::
