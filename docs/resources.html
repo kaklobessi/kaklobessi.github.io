@@ -334,64 +334,43 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Applied projects at the intersection of data, development, and public policy.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Spatial Targeting Tool for Togo</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p><em>A composite priority index combining census, satellite, and geospatial data to rank territories by vulnerability, supporting evidence-based allocation of social and infrastructure investments.</em></p>
-<div style="display:flex; flex-direction:column; gap:0.6rem; margin-top:1.2rem;">
+<div style="margin-top:2rem;">
 
-  <!-- Methodology -->
-  <details style="border-radius:6px; overflow:hidden;">
-    <summary style="
-      list-style:none;
-      cursor:pointer;
-      background:#002366;
-      color:white;
-      font-weight:600;
-      font-size:0.95rem;
-      padding:0.75rem 1.2rem;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      user-select:none;
-    ">
-      Methodology
-      <span style="font-size:0.8rem; opacity:0.8;">▼</span>
-    </summary>
-    <div style="padding:1.2rem 1.5rem; background:#f5f8ff; color:#333; line-height:1.8; font-size:0.93rem;">
+  <!-- ── PROJECT 1 ─────────────────────────────────────────── -->
+  <div style="margin-bottom:3rem;">
 
-      <p>The PTI v4 is a composite territorial prioritization index designed to identify the cantons and neighborhoods facing the most severe and overlapping forms of vulnerability. The underlying premise is that a territory should be deemed more deserving of intervention when it simultaneously exhibits poor access to essential services, elevated exposure to environmental hazards, physical isolation, and weak signals of economic activity.</p>
+    <h2 style="font-size:1.5rem; font-weight:700; color:#002366; margin-bottom:0.3rem;" class="anchored">
+      Spatial Targeting Tool for Togo
+    </h2>
+    <p style="color:#666; font-size:0.88rem; margin-bottom:0.8rem;">
+      Spatial Analysis &nbsp;·&nbsp; Public Policy &nbsp;·&nbsp; 2024
+    </p>
+    <p style="color:#333; font-size:0.93rem; margin-bottom:1.2rem; line-height:1.7;">
+      A composite priority index combining census, satellite, and geospatial data to rank cantons and neighborhoods in Togo by vulnerability, supporting evidence-based allocation of social and infrastructure investments.
+    </p>
 
-      <p>The index aggregates five dimensions: <strong>travel time to the nearest school</strong>, <strong>travel time to the nearest health facility</strong>, <strong>flood exposure</strong>, <strong>road density</strong>, and <strong>nighttime light intensity</strong>. Travel times to schools and health centers serve as proxies for access to basic social services. Flood exposure captures an environmental constraint that compounds household vulnerability. Road density proxies physical connectivity and territorial integration. Nighttime light intensity is used as an indirect indicator of local economic activity and development levels.</p>
+    <div style="display:flex; flex-direction:column; gap:0.5rem;">
 
-      <p>Prior to aggregation, each indicator is standardized to ensure comparability across dimensions with heterogeneous units and scales. The index is then constructed through a simple additive specification. Indicators associated with more favorable territorial conditions (road density and nighttime lights) enter with a negative sign, so that higher index values consistently correspond to greater relative deprivation. Conversely, indicators reflecting disadvantage (travel times and flood exposure) contribute positively to the index.</p>
+      <!-- Methodology -->
+      <details style="border-radius:6px; overflow:hidden;">
+        <summary style="list-style:none; cursor:pointer; background:#002366; color:white; font-weight:600; font-size:0.95rem; padding:0.75rem 1.2rem; display:flex; justify-content:space-between; align-items:center; user-select:none;">
+          Methodology <span style="font-size:0.8rem; opacity:0.8;">▼</span>
+        </summary>
+        <div style="padding:1.2rem 1.5rem; background:#f5f8ff; color:#333; line-height:1.8; font-size:0.93rem;">
+          <p>The PTI v4 is a composite territorial prioritization index designed to identify the cantons and neighborhoods facing the most severe and overlapping forms of vulnerability. The underlying premise is that a territory should be deemed more deserving of intervention when it simultaneously exhibits poor access to essential services, elevated exposure to environmental hazards, physical isolation, and weak signals of economic activity.</p>
+          <p>The index aggregates five dimensions: <strong>travel time to the nearest school</strong>, <strong>travel time to the nearest health facility</strong>, <strong>flood exposure</strong>, <strong>road density</strong>, and <strong>nighttime light intensity</strong>. Travel times to schools and health centers serve as proxies for access to basic social services. Flood exposure captures an environmental constraint that compounds household vulnerability. Road density proxies physical connectivity and territorial integration. Nighttime light intensity is used as an indirect indicator of local economic activity and development levels.</p>
+          <p>Prior to aggregation, each indicator is standardized to ensure comparability across dimensions with heterogeneous units and scales. The index is then constructed through a simple additive specification. Indicators associated with more favorable territorial conditions (road density and nighttime lights) enter with a negative sign, so that higher index values consistently correspond to greater relative deprivation. Conversely, indicators reflecting disadvantage (travel times and flood exposure) contribute positively to the index.</p>
+          <p style="margin-bottom:0;">The PTI v4 can therefore be interpreted as a synthetic measure of relative territorial disadvantage: the higher the score, the higher the priority assigned to the unit. Once computed, the index is discretized into priority groups (typically quintiles) to facilitate cartographic visualization and cross-territorial comparison.</p>
+        </div>
+      </details>
 
-      <p style="margin-bottom:0;">The PTI v4 can therefore be interpreted as a synthetic measure of relative territorial disadvantage: the higher the score, the higher the priority assigned to the unit. Once computed, the index is discretized into priority groups (typically quintiles) to facilitate cartographic visualization and cross-territorial comparison.</p>
-
-    </div>
-  </details>
-
-  <!-- Inputs -->
-  <details style="border-radius:6px; overflow:hidden;">
-    <summary style="
-      list-style:none;
-      cursor:pointer;
-      background:#002366;
-      color:white;
-      font-weight:600;
-      font-size:0.95rem;
-      padding:0.75rem 1.2rem;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      user-select:none;
-    ">
-      Inputs
-      <span style="font-size:0.8rem; opacity:0.8;">▼</span>
-    </summary>
-    <div style="padding:1.1rem 1.4rem; background:#f5f8ff;">
-      
+      <!-- Inputs -->
+      <details style="border-radius:6px; overflow:hidden;">
+        <summary style="list-style:none; cursor:pointer; background:#002366; color:white; font-weight:600; font-size:0.95rem; padding:0.75rem 1.2rem; display:flex; justify-content:space-between; align-items:center; user-select:none;">
+          Inputs <span style="font-size:0.8rem; opacity:0.8;">▼</span>
+        </summary>
+        <div style="padding:1.1rem 1.4rem; background:#f5f8ff;">
+          
 <table class="caption-top table">
 <thead>
 <tr class="header" style="border-bottom:2px solid #002366;">
@@ -435,96 +414,72 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 
-      <p style="margin-top:0.9rem; margin-bottom:0; font-size:0.82rem; color:#666;">
-        <span style="color:#002366; font-weight:600;">†</span> Restricted-access data. Requests should be directed to <strong>INSEED-Togo</strong> (Institut National de la Statistique et des Études Économiques et Démographiques).
-      </p>
-    </div>
-  </details>
-
-  <!-- Results -->
-  <details style="border-radius:6px; overflow:hidden;">
-    <summary style="
-      list-style:none;
-      cursor:pointer;
-      background:#002366;
-      color:white;
-      font-weight:600;
-      font-size:0.95rem;
-      padding:0.75rem 1.2rem;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      user-select:none;
-    ">
-      Results
-      <span style="font-size:0.8rem; opacity:0.8;">▼</span>
-    </summary>
-    <div style="padding:1.4rem 1.4rem; background:#f5f8ff; display:flex; flex-direction:column; gap:2.5rem;">
-
-      <!-- Nighttime Lights -->
-      <div>
-        <p style="font-weight:600; color:#002366; margin-bottom:0.8rem; font-size:0.95rem;">Nighttime Light Intensity: Togo &amp; Greater Lomé (VIIRS 2025)</p>
-        <div style="display:flex; gap:1rem; flex-wrap:wrap;">
-          <div style="flex:1; min-width:200px;">
-            <img src="images/togo_lumieres_nocturnes_2025.png" style="width:100%; border-radius:6px; border:1px solid #dde3f0;">
-            <p style="font-size:0.8rem; color:#555; margin-top:0.5rem; line-height:1.5;">
-              Annual mean VIIRS/NPP radiance (log scale) at the national level. Light concentration is driven by Lomé and a handful of secondary cities; most northern cantons register near-zero luminosity, signaling acute infrastructure deficits. Canton boundaries: INSEED-Togo.
-            </p>
-          </div>
-          <div style="flex:1; min-width:200px;">
-            <img src="images/lome_lumieres_nocturnes_2025.png" style="width:100%; border-radius:6px; border:1px solid #dde3f0;">
-            <p style="font-size:0.8rem; color:#555; margin-top:0.5rem; line-height:1.5;">
-              Intra-urban light distribution in Greater Lomé. Despite the city's overall dynamism, significant disparities emerge between the lit commercial core and underserved peripheral neighborhoods. Neighborhood boundaries: DAGL.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- RWI -->
-      <div>
-        <p style="font-weight:600; color:#002366; margin-bottom:0.8rem; font-size:0.95rem;">Relative Wealth Index: Canton Level (Meta RWI)</p>
-        <div style="max-width:340px;">
-          <img src="images/rwi_mean_map.png" style="width:100%; border-radius:6px; border:1px solid #dde3f0;">
-          <p style="font-size:0.8rem; color:#555; margin-top:0.5rem; line-height:1.5;">
-            Population-weighted mean Relative Wealth Index (Meta) per canton, calibrated against the RGPH 2022. Deep red tones indicate low relative asset wealth, concentrated in the Savanes and central Kara regions. Blue tones reflect comparatively wealthier cantons, predominantly in the south. Canton names: INSEED-Togo.
+          <p style="margin-top:0.9rem; margin-bottom:0; font-size:0.82rem; color:#666;">
+            <span style="color:#002366; font-weight:600;">†</span> Restricted-access data. Requests should be directed to <strong>INSEED-Togo</strong> (Institut National de la Statistique et des Études Économiques et Démographiques).
           </p>
         </div>
-      </div>
+      </details>
 
-      <!-- PTI Maps -->
-      <div>
-        <p style="font-weight:600; color:#002366; margin-bottom:0.8rem; font-size:0.95rem;">Priority Targeting Index (PTI v5): National &amp; Greater Lomé</p>
-        <div style="display:flex; gap:1rem; flex-wrap:wrap;">
-          <div style="flex:1; min-width:200px;">
-            <img src="images/priority_v5_map.png" style="width:100%; border-radius:6px; border:1px solid #dde3f0;">
-            <p style="font-size:0.8rem; color:#555; margin-top:0.5rem; line-height:1.5;">
-              National canton-level priority classification into five tiers (PTI v5). Priority 1 cantons (the most deprived) are concentrated in the Savanes and Kara regions, where low wealth, limited service access, and infrastructure gaps overlap. Canton names: INSEED-Togo.
-            </p>
+      <!-- Results -->
+      <details style="border-radius:6px; overflow:hidden;">
+        <summary style="list-style:none; cursor:pointer; background:#002366; color:white; font-weight:600; font-size:0.95rem; padding:0.75rem 1.2rem; display:flex; justify-content:space-between; align-items:center; user-select:none;">
+          Results <span style="font-size:0.8rem; opacity:0.8;">▼</span>
+        </summary>
+        <div style="padding:1.4rem; background:#f5f8ff; display:flex; flex-direction:column; gap:2.5rem;">
+
+          <!-- Nighttime Lights -->
+          <div>
+            <p style="font-weight:600; color:#002366; margin-bottom:0.8rem; font-size:0.95rem;">Nighttime Light Intensity: Togo &amp; Greater Lomé (VIIRS 2025)</p>
+            <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+              <div style="flex:1; min-width:200px;">
+                <img src="images/togo_lumieres_nocturnes_2025.png" style="width:100%; border-radius:6px; border:1px solid #dde3f0;">
+                <p style="font-size:0.8rem; color:#555; margin-top:0.5rem; line-height:1.5;">Annual mean VIIRS/NPP radiance (log scale) at the national level. Light concentration is driven by Lomé and a handful of secondary cities; most northern cantons register near-zero luminosity, signaling acute infrastructure deficits. Canton boundaries: INSEED-Togo.</p>
+              </div>
+              <div style="flex:1; min-width:200px;">
+                <img src="images/lome_lumieres_nocturnes_2025.png" style="width:100%; border-radius:6px; border:1px solid #dde3f0;">
+                <p style="font-size:0.8rem; color:#555; margin-top:0.5rem; line-height:1.5;">Intra-urban light distribution in Greater Lomé. Despite the city's overall dynamism, significant disparities emerge between the lit commercial core and underserved peripheral neighborhoods. Neighborhood boundaries: DAGL.</p>
+              </div>
+            </div>
           </div>
-          <div style="flex:1; min-width:200px;">
-            <img src="images/dagl_priority_v5_map.png" style="width:100%; border-radius:6px; border:1px solid #dde3f0;">
-            <p style="font-size:0.8rem; color:#555; margin-top:0.5rem; line-height:1.5;">
-              Neighborhood-level priority classification for Greater Lomé (PTI v5). The map reveals marked within-city heterogeneity: peri-urban and northern periphery neighborhoods concentrate the highest deprivation levels, while central and coastal areas rank among the least deprived. Neighborhood names: DAGL.
-            </p>
+
+          <!-- RWI -->
+          <div>
+            <p style="font-weight:600; color:#002366; margin-bottom:0.8rem; font-size:0.95rem;">Relative Wealth Index: Canton Level (Meta RWI)</p>
+            <div style="max-width:340px;">
+              <img src="images/rwi_mean_map.png" style="width:100%; border-radius:6px; border:1px solid #dde3f0;">
+              <p style="font-size:0.8rem; color:#555; margin-top:0.5rem; line-height:1.5;">Population-weighted mean Relative Wealth Index (Meta) per canton, calibrated against the RGPH 2022. Deep red tones indicate low relative asset wealth, concentrated in the Savanes and central Kara regions. Blue tones reflect comparatively wealthier cantons, predominantly in the south. Canton names: INSEED-Togo.</p>
+            </div>
           </div>
+
+          <!-- PTI Maps -->
+          <div>
+            <p style="font-weight:600; color:#002366; margin-bottom:0.8rem; font-size:0.95rem;">Priority Targeting Index (PTI v5): National &amp; Greater Lomé</p>
+            <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+              <div style="flex:1; min-width:200px;">
+                <img src="images/priority_v5_map.png" style="width:100%; border-radius:6px; border:1px solid #dde3f0;">
+                <p style="font-size:0.8rem; color:#555; margin-top:0.5rem; line-height:1.5;">National canton-level priority classification into five tiers (PTI v5). Priority 1 cantons (the most deprived) are concentrated in the Savanes and Kara regions, where low wealth, limited service access, and infrastructure gaps overlap. Canton names: INSEED-Togo.</p>
+              </div>
+              <div style="flex:1; min-width:200px;">
+                <img src="images/dagl_priority_v5_map.png" style="width:100%; border-radius:6px; border:1px solid #dde3f0;">
+                <p style="font-size:0.8rem; color:#555; margin-top:0.5rem; line-height:1.5;">Neighborhood-level priority classification for Greater Lomé (PTI v5). The map reveals marked within-city heterogeneity: peri-urban and northern periphery neighborhoods concentrate the highest deprivation levels, while central and coastal areas rank among the least deprived. Neighborhood names: DAGL.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quadrant -->
+          <div>
+            <p style="font-weight:600; color:#002366; margin-bottom:0.8rem; font-size:0.95rem;">Poverty–Wealth Quadrant Analysis: Cantons (excl. Lomé)</p>
+            <img src="images/rwi_fgt0_quadrant_scatter_sans_lome.png" style="width:100%; border-radius:6px; border:1px solid #dde3f0;">
+            <p style="font-size:0.8rem; color:#555; margin-top:0.5rem; line-height:1.5;">Each canton is positioned along two dimensions: the poverty headcount ratio FGT(0) on the vertical axis and the mean Relative Wealth Index on the horizontal axis. The four quadrants define a targeting typology. Priority I cantons (high poverty, low wealth) represent the most acute cases of combined deprivation and are primary targets for social protection interventions. For canton-level identification on this chart, please <a href="mailto:kodjo.aklobessi@umontreal.ca" style="color:#002366;">contact the author</a>.</p>
+          </div>
+
         </div>
-      </div>
-
-      <!-- Quadrant -->
-      <div>
-        <p style="font-weight:600; color:#002366; margin-bottom:0.8rem; font-size:0.95rem;">Poverty–Wealth Quadrant Analysis: Cantons (excl. Lomé)</p>
-        <img src="images/rwi_fgt0_quadrant_scatter_sans_lome.png" style="width:100%; border-radius:6px; border:1px solid #dde3f0;">
-        <p style="font-size:0.8rem; color:#555; margin-top:0.5rem; line-height:1.5;">
-          Each canton is positioned along two dimensions: the poverty headcount ratio FGT(0) on the vertical axis and the mean Relative Wealth Index on the horizontal axis. The four quadrants define a targeting typology. Priority I cantons (high poverty, low wealth) represent the most acute cases of combined deprivation and are primary targets for social protection interventions. For canton-level identification on this chart, please <a href="mailto:kodjo.aklobessi@umontreal.ca" style="color:#002366;">contact the author</a>.
-        </p>
-      </div>
+      </details>
 
     </div>
-  </details>
+  </div>
+  <!-- ── END PROJECT 1 ──────────────────────────────────────── -->
 
-</div>
-</div>
-</div>
 </div>
 
 
