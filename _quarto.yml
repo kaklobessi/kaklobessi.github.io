@@ -47,3 +47,6 @@ format:
     css: styles.css
     toc: false
     page-layout: full
+    include-in-header:
+      text: |
+        <meta name="google-site-verification" content="SvmyFWn3Jif2EbxAUtl1iCyAvJrpDGBnFYFy-8HgIkw" />
