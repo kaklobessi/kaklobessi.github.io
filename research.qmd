@@ -5,7 +5,6 @@ title: "Research"
 ## Works in Progress
 
 **Progressive Taxation and Intra-Household Insurance: The Added Worker Effect under Labor Income Risk**
-<br>*(in Progress)*
 
 
 ## Publications
@@ -22,6 +21,7 @@ This paper analyzes the revenue-pollution relationship by revisiting the Environ
 
 
 **Impact du Conseil Agricole sur les Performances des Producteurs d'Anacarde de Côte d'Ivoire**
+<br>*(The Impact of Agricultural Advisory Services on Cashew Producers' Performance in Côte d'Ivoire)*
 <br>with Doukouré Charles Fé
 <br>*European Scientific Journal*, Vol. 14(30), 2018, p. 292
 <br>DOI: [10.19044/esj.2018.v14n30p292](https://doi.org/10.19044/esj.2018.v14n30p292)

@@ -25,7 +25,7 @@ website:
       - href: cv.qmd
         text: CV
       - href: news.qmd
-        text: News
+        text: Blog
       - href: resources.qmd
         text: Ideas & Experiments
     right:
