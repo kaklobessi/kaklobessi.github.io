@@ -67,22 +67,19 @@ main.content,
 body {
   font-size: 1rem;
   line-height: 1.75;
-  color: #1a1a2e;
 }
 
 h1.title {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #002366;
   margin-bottom: 0.3rem;
-  border-bottom: 3px solid #002366;
+  border-bottom: 3px solid currentColor;
   padding-bottom: 0.4rem;
 }
 
 h2 {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #002366;
   margin-top: 2rem;
   margin-bottom: 0.6rem;
 }
@@ -93,7 +90,6 @@ p {
 
 /* ── Links ───────────────────────────────────────────────── */
 a {
-  color: #002366;
   text-decoration: none;
 }
 
