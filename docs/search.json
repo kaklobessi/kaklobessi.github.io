@@ -4,7 +4,7 @@
     "href": "resources.html",
     "title": "Ideas & Experiments",
     "section": "",
-    "text": "Applied projects at the intersection of data, development, and public policy.\n\nSpatial Targeting Tool for Togo A composite priority index combining census, satellite, and geospatial data to rank territories by vulnerability. Spatial Analysis · 2024"
+    "text": "Applied projects at the intersection of data, development, and public policy.\n\nSpatial Targeting Tool for Togo\n\n\nA composite priority index combining census, satellite, and geospatial data to rank territories by vulnerability — supporting evidence-based allocation of social and infrastructure investments.\n\n\n  \n    ▶ Methodology\n  \n  \n    Each indicator is normalized to a 0–1 scale and aggregated into a weighted composite score. Territorial units are then ranked and classified into quintiles — the top quintile identifies areas of overlapping deprivation.\n    The index operates at two scales: canton (national coverage) and neighborhood (Greater Lomé).\n  \n\n\n\n  \n    ▶ Inputs\n  \n  \n    \n\n\n\nIndicator\nSource\n\n\n\n\nPopulation & poverty\nRGPH 2022, EHCVM\n\n\nNighttime lights\nNASA VIIRS\n\n\nRelative wealth\nMeta RWI\n\n\nService accessibility\nOpenStreetMap\n\n\nRoad network\nOpenStreetMap\n\n\nFlood risk\nGFD / FATHOM\n\n\nBuilt-up density\nGHSL\n\n\n\n\n  \n\n\n\n  \n    ▶ Results\n  \n  \n    Coming soon."
   },
   {
     "objectID": "about.html",
