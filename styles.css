@@ -1,5 +1,3 @@
-/* css styles */
-
 /* ── Navbar ─────────────────────────────────────────────── */
 .navbar {
   background-color: #002366 !important;
@@ -29,26 +27,113 @@
   color: #ffffff !important;
 }
 
-/* Icon links (GitHub, Email) */
 .navbar-nav .nav-link i {
   font-size: 1.05rem;
 }
 
-/* Remove underline on navbar links */
 .navbar a {
   text-decoration: none !important;
 }
 
-/* Justify body text */
-p {
-  text-align: justify;
+/* ── Layout: full-width with max-width cap ───────────────── */
+#quarto-content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
-/* Extend bio text further to the right */
-#quarto-content .about-contents {
+main.content,
+.page-full main.content {
+  max-width: 960px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+}
+
+/* Home page (trestles) — keep its own layout */
+.about-contents {
+  max-width: 100% !important;
   padding-right: 0 !important;
 }
 
 .about-main {
   max-width: 100% !important;
+}
+
+/* ── Typography ──────────────────────────────────────────── */
+body {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #1a1a2e;
+}
+
+h1.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #002366;
+  margin-bottom: 0.3rem;
+  border-bottom: 3px solid #002366;
+  padding-bottom: 0.4rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #002366;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+p {
+  text-align: justify;
+}
+
+/* ── Links ───────────────────────────────────────────────── */
+a {
+  color: #002366;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ── Tables ──────────────────────────────────────────────── */
+table {
+  font-size: 0.93rem;
+}
+
+/* ── Tabset ──────────────────────────────────────────────── */
+.nav-tabs .nav-link {
+  color: #555 !important;
+  font-weight: 500;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 0;
+  background: none !important;
+}
+
+.nav-tabs .nav-link.active {
+  color: #002366 !important;
+  border-bottom: 2px solid #002366 !important;
+  font-weight: 700;
+  background: none !important;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #dde3f0;
+  margin-bottom: 1.4rem;
+}
+
+/* ── Footer ──────────────────────────────────────────────── */
+.nav-footer {
+  background: #f5f8ff;
+  border-top: 1px solid #dde3f0;
+  font-size: 0.85rem;
+  color: #666;
+  padding: 1rem 2rem;
 }
