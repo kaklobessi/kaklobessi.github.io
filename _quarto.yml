@@ -27,7 +27,7 @@ website:
       - href: news.qmd
         text: News
       - href: resources.qmd
-        text: Resources
+        text: Ideas & Experiments
     right:
       - icon: github
         href: https://github.com/kaklobessi
