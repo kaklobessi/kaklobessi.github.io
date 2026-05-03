@@ -14,7 +14,7 @@ Applied projects at the intersection of data, development, and public policy.
       Spatial Targeting Tool for Togo
     </h2>
     <p style="color:#666; font-size:0.88rem; margin-bottom:0.8rem;">
-      Spatial Analysis &nbsp;·&nbsp; Public Policy &nbsp;·&nbsp; 2024
+      Spatial Analysis &nbsp;·&nbsp; Public Policy &nbsp;·&nbsp; 2025
     </p>
     <p style="color:#333; font-size:0.93rem; margin-bottom:1.2rem; line-height:1.7;">
       A composite priority index combining census, satellite, and geospatial data to rank cantons and neighborhoods in Togo by vulnerability, supporting evidence-based allocation of social and infrastructure investments.
