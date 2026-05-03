@@ -1,121 +1,42 @@
 ---
-title: "Development of Spatial Targeting Tools for Togo"
+title: "Spatial Targeting Tool for Togo"
 ---
 
-```{=html}
-<div style="display:flex; gap:0.6rem; flex-wrap:wrap; margin-bottom:1.8rem;">
-  <span style="background:#002366; color:white; border-radius:6px; padding:0.3rem 0.8rem; font-size:0.8rem; font-weight:600;">Spatial Analysis</span>
-  <span style="background:#e8eef8; color:#002366; border-radius:6px; padding:0.3rem 0.8rem; font-size:0.8rem; font-weight:600;">Public Policy</span>
-  <span style="background:#e8eef8; color:#002366; border-radius:6px; padding:0.3rem 0.8rem; font-size:0.8rem; font-weight:600;">Remote Sensing</span>
-  <span style="background:#e8eef8; color:#002366; border-radius:6px; padding:0.3rem 0.8rem; font-size:0.8rem; font-weight:600;">Togo · 2024</span>
-</div>
-```
+*Spatial Analysis · Public Policy · 2024*
 
-## Introduction
+---
 
-Effective targeting of social and infrastructure investments requires more than aggregate poverty statistics — it demands a fine-grained understanding of *where* vulnerabilities concentrate, overlap, and interact across space. In contexts where administrative capacity is limited and resources are scarce, identifying priority territories is both a technical and a political challenge.
+## Overview
 
-This project develops a **data-driven territorial targeting tool for Togo** designed to support evidence-based allocation of public investments. The tool integrates population and poverty information from the 2022 national census with a rich set of satellite-derived and geospatial indicators. These inputs are combined into a **composite priority index** that ranks all cantons nationwide and all neighborhoods (*quartiers*) in Greater Lomé according to the intensity of overlapping vulnerabilities.
-
-The objective is operational: to provide policymakers, development agencies, and local governments with a transparent, reproducible framework for identifying areas where interventions are likely to generate the greatest social impact — moving beyond ad hoc targeting toward a structured, data-grounded approach.
+This project builds a composite priority index to rank cantons and neighborhoods in Togo by vulnerability, combining census data with satellite and geospatial indicators. The goal is to help allocate social and infrastructure investments where they matter most.
 
 ---
 
 ## Methodology
 
-```{=html}
-<div style="background:#f5f8ff; border-left:4px solid #002366; border-radius:0 8px 8px 0; padding:1.2rem 1.5rem; margin-bottom:1.5rem;">
-  <strong>Core principle:</strong> The index aggregates multiple vulnerability dimensions into a single ranked score, allowing direct comparison across territorial units at two scales — canton (national) and neighborhood (Greater Lomé).
-</div>
-```
+Each indicator is normalized to a 0–1 scale and aggregated into a weighted composite score. Territorial units are then ranked and classified into quintiles — the top quintile identifies areas of overlapping deprivation.
 
-The construction of the priority index follows four main steps:
-
-**1. Unit of analysis**
-
-The tool operates at two complementary scales:
-
-- **Canton level** — 117 cantons nationwide, enabling national-level prioritization of rural and peri-urban territories.
-- **Neighborhood (*quartier*) level** — fine-grained targeting within Greater Lomé, where spatial heterogeneity is high and aggregate statistics mask localized deprivation.
-
-**2. Indicator normalization**
-
-Each raw input is transformed into a normalized score on a common 0–1 scale using min-max normalization, so that higher values consistently indicate greater vulnerability or need. For indicators where higher raw values reflect *better* conditions (e.g., wealth index, road accessibility), the score is inverted.
-
-**3. Composite index construction**
-
-Normalized indicators are aggregated into a weighted composite score. Weights reflect the relative policy relevance of each dimension and are calibrated through stakeholder consultation and sensitivity analysis. The resulting index provides a continuous vulnerability score for each territorial unit.
-
-**4. Ranking and classification**
-
-Units are ranked from highest to lowest priority score and classified into quintiles for visualization and operational use. The top quintile identifies territories where multiple deprivations overlap — the primary targets for investment.
+The index operates at two scales: **canton** (national coverage) and **neighborhood** (Greater Lomé).
 
 ---
 
 ## Inputs
 
-The index integrates **seven categories of indicators**, combining administrative, satellite, and geospatial data sources:
-
-```{=html}
-<div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:1.2rem; margin:1.5rem 0;">
-
-  <div style="border:1px solid #dde3f0; border-radius:9px; padding:1.2rem 1.4rem; background:#fff;">
-    <div style="font-size:1.4rem; margin-bottom:0.5rem;">👥</div>
-    <div style="font-weight:700; color:#002366; margin-bottom:0.4rem;">Population & Poverty</div>
-    <div style="font-size:0.88rem; color:#555; line-height:1.55;">Population counts, poverty headcount ratios, and household welfare estimates from the 2022 RGPH census and the EHCVM household survey.</div>
-  </div>
-
-  <div style="border:1px solid #dde3f0; border-radius:9px; padding:1.2rem 1.4rem; background:#fff;">
-    <div style="font-size:1.4rem; margin-bottom:0.5rem;">🌙</div>
-    <div style="font-weight:700; color:#002366; margin-bottom:0.4rem;">Nighttime Lights</div>
-    <div style="font-size:0.88rem; color:#555; line-height:1.55;">NASA VIIRS nighttime light radiance as a proxy for economic activity and electrification. Low luminosity signals infrastructure deprivation.</div>
-  </div>
-
-  <div style="border:1px solid #dde3f0; border-radius:9px; padding:1.2rem 1.4rem; background:#fff;">
-    <div style="font-size:1.4rem; margin-bottom:0.5rem;">💰</div>
-    <div style="font-weight:700; color:#002366; margin-bottom:0.4rem;">Relative Wealth Index</div>
-    <div style="font-size:0.88rem; color:#555; line-height:1.55;">Meta / Facebook Relative Wealth Index — a high-resolution satellite-based estimate of relative asset wealth at 2.4 km grid level.</div>
-  </div>
-
-  <div style="border:1px solid #dde3f0; border-radius:9px; padding:1.2rem 1.4rem; background:#fff;">
-    <div style="font-size:1.4rem; margin-bottom:0.5rem;">🏥</div>
-    <div style="font-weight:700; color:#002366; margin-bottom:0.4rem;">Service Accessibility</div>
-    <div style="font-size:0.88rem; color:#555; line-height:1.55;">Travel time to the nearest health facility, school, and market, computed from OpenStreetMap and road network data using friction surfaces.</div>
-  </div>
-
-  <div style="border:1px solid #dde3f0; border-radius:9px; padding:1.2rem 1.4rem; background:#fff;">
-    <div style="font-size:1.4rem; margin-bottom:0.5rem;">🛣️</div>
-    <div style="font-weight:700; color:#002366; margin-bottom:0.4rem;">Road Network</div>
-    <div style="font-size:0.88rem; color:#555; line-height:1.55;">Road density and quality classification from OpenStreetMap, capturing physical connectivity and isolation of territorial units.</div>
-  </div>
-
-  <div style="border:1px solid #dde3f0; border-radius:9px; padding:1.2rem 1.4rem; background:#fff;">
-    <div style="font-size:1.4rem; margin-bottom:0.5rem;">🌊</div>
-    <div style="font-weight:700; color:#002366; margin-bottom:0.4rem;">Flood Risk</div>
-    <div style="font-size:0.88rem; color:#555; line-height:1.55;">Flood hazard exposure derived from the Global Flood Database (GFD) and FATHOM hydrological models, identifying climate-vulnerable zones.</div>
-  </div>
-
-  <div style="border:1px solid #dde3f0; border-radius:9px; padding:1.2rem 1.4rem; background:#fff;">
-    <div style="font-size:1.4rem; margin-bottom:0.5rem;">🏘️</div>
-    <div style="font-weight:700; color:#002366; margin-bottom:0.4rem;">Built-up Density</div>
-    <div style="font-size:0.88rem; color:#555; line-height:1.55;">Human settlement layer from the Global Human Settlement Layer (GHSL), measuring built-up area density as an indicator of urbanization pressure.</div>
-  </div>
-
-</div>
-```
+| Indicator | Source |
+|---|---|
+| Population & poverty | RGPH 2022, EHCVM |
+| Nighttime lights | NASA VIIRS |
+| Relative wealth | Meta RWI |
+| Service accessibility | OpenStreetMap |
+| Road network | OpenStreetMap |
+| Flood risk | GFD / FATHOM |
+| Built-up density | GHSL |
 
 ---
 
 ## Results
 
-```{=html}
-<div style="background:#f5f8ff; border:1px solid #dde3f0; border-radius:9px; padding:1.5rem 1.8rem; text-align:center; color:#555;">
-  <div style="font-size:1.1rem; font-weight:600; color:#002366; margin-bottom:0.5rem;">Results coming soon</div>
-  <div style="font-size:0.92rem; line-height:1.6;">
-    This section will present canton-level and neighborhood-level priority maps, quintile distributions, and sensitivity analyses. Results are currently being finalized.
-  </div>
-</div>
-```
+*Coming soon.*
 
 ---
 

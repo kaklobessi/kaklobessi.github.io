@@ -4,7 +4,7 @@
     "href": "resources.html",
     "title": "Ideas & Experiments",
     "section": "",
-    "text": "This section gathers applied projects, tools, and experiments at the intersection of data science, development economics, and public policy. The work here is exploratory — combining satellite imagery, geospatial data, and statistical methods to address concrete policy problems in developing country contexts.\n\n\n\n  \n    \n      \n        SPATIAL ANALYSIS\n        Togo · 2024\n      \n      \n        Development of Spatial Targeting Tools for Togo\n      \n      \n        A data-driven composite priority index combining census, satellite, and geospatial layers to rank cantons and neighborhoods by vulnerability — supporting the allocation of social and infrastructure investments.\n      \n      Read more →"
+    "text": "Applied projects at the intersection of data, development, and public policy.\n\nSpatial Targeting Tool for Togo A composite priority index combining census, satellite, and geospatial data to rank territories by vulnerability. Spatial Analysis · 2024"
   },
   {
     "objectID": "about.html",
@@ -72,37 +72,37 @@
   {
     "objectID": "togo-targeting.html",
     "href": "togo-targeting.html",
-    "title": "Development of Spatial Targeting Tools for Togo",
+    "title": "Spatial Targeting Tool for Togo",
     "section": "",
-    "text": "Spatial Analysis\n  Public Policy\n  Remote Sensing\n  Togo · 2024"
+    "text": "Spatial Analysis · Public Policy · 2024"
   },
   {
-    "objectID": "togo-targeting.html#introduction",
-    "href": "togo-targeting.html#introduction",
-    "title": "Development of Spatial Targeting Tools for Togo",
-    "section": "Introduction",
-    "text": "Introduction\nEffective targeting of social and infrastructure investments requires more than aggregate poverty statistics — it demands a fine-grained understanding of where vulnerabilities concentrate, overlap, and interact across space. In contexts where administrative capacity is limited and resources are scarce, identifying priority territories is both a technical and a political challenge.\nThis project develops a data-driven territorial targeting tool for Togo designed to support evidence-based allocation of public investments. The tool integrates population and poverty information from the 2022 national census with a rich set of satellite-derived and geospatial indicators. These inputs are combined into a composite priority index that ranks all cantons nationwide and all neighborhoods (quartiers) in Greater Lomé according to the intensity of overlapping vulnerabilities.\nThe objective is operational: to provide policymakers, development agencies, and local governments with a transparent, reproducible framework for identifying areas where interventions are likely to generate the greatest social impact — moving beyond ad hoc targeting toward a structured, data-grounded approach."
+    "objectID": "togo-targeting.html#overview",
+    "href": "togo-targeting.html#overview",
+    "title": "Spatial Targeting Tool for Togo",
+    "section": "Overview",
+    "text": "Overview\nThis project builds a composite priority index to rank cantons and neighborhoods in Togo by vulnerability, combining census data with satellite and geospatial indicators. The goal is to help allocate social and infrastructure investments where they matter most."
   },
   {
     "objectID": "togo-targeting.html#methodology",
     "href": "togo-targeting.html#methodology",
-    "title": "Development of Spatial Targeting Tools for Togo",
+    "title": "Spatial Targeting Tool for Togo",
     "section": "Methodology",
-    "text": "Methodology\n\n  Core principle: The index aggregates multiple vulnerability dimensions into a single ranked score, allowing direct comparison across territorial units at two scales — canton (national) and neighborhood (Greater Lomé).\n\nThe construction of the priority index follows four main steps:\n1. Unit of analysis\nThe tool operates at two complementary scales:\n\nCanton level — 117 cantons nationwide, enabling national-level prioritization of rural and peri-urban territories.\nNeighborhood (quartier) level — fine-grained targeting within Greater Lomé, where spatial heterogeneity is high and aggregate statistics mask localized deprivation.\n\n2. Indicator normalization\nEach raw input is transformed into a normalized score on a common 0–1 scale using min-max normalization, so that higher values consistently indicate greater vulnerability or need. For indicators where higher raw values reflect better conditions (e.g., wealth index, road accessibility), the score is inverted.\n3. Composite index construction\nNormalized indicators are aggregated into a weighted composite score. Weights reflect the relative policy relevance of each dimension and are calibrated through stakeholder consultation and sensitivity analysis. The resulting index provides a continuous vulnerability score for each territorial unit.\n4. Ranking and classification\nUnits are ranked from highest to lowest priority score and classified into quintiles for visualization and operational use. The top quintile identifies territories where multiple deprivations overlap — the primary targets for investment."
+    "text": "Methodology\nEach indicator is normalized to a 0–1 scale and aggregated into a weighted composite score. Territorial units are then ranked and classified into quintiles — the top quintile identifies areas of overlapping deprivation.\nThe index operates at two scales: canton (national coverage) and neighborhood (Greater Lomé)."
   },
   {
     "objectID": "togo-targeting.html#inputs",
     "href": "togo-targeting.html#inputs",
-    "title": "Development of Spatial Targeting Tools for Togo",
+    "title": "Spatial Targeting Tool for Togo",
     "section": "Inputs",
-    "text": "Inputs\nThe index integrates seven categories of indicators, combining administrative, satellite, and geospatial data sources:\n\n\n  \n    👥\n    Population & Poverty\n    Population counts, poverty headcount ratios, and household welfare estimates from the 2022 RGPH census and the EHCVM household survey.\n  \n\n  \n    🌙\n    Nighttime Lights\n    NASA VIIRS nighttime light radiance as a proxy for economic activity and electrification. Low luminosity signals infrastructure deprivation.\n  \n\n  \n    💰\n    Relative Wealth Index\n    Meta / Facebook Relative Wealth Index — a high-resolution satellite-based estimate of relative asset wealth at 2.4 km grid level.\n  \n\n  \n    🏥\n    Service Accessibility\n    Travel time to the nearest health facility, school, and market, computed from OpenStreetMap and road network data using friction surfaces.\n  \n\n  \n    🛣️\n    Road Network\n    Road density and quality classification from OpenStreetMap, capturing physical connectivity and isolation of territorial units.\n  \n\n  \n    🌊\n    Flood Risk\n    Flood hazard exposure derived from the Global Flood Database (GFD) and FATHOM hydrological models, identifying climate-vulnerable zones.\n  \n\n  \n    🏘️\n    Built-up Density\n    Human settlement layer from the Global Human Settlement Layer (GHSL), measuring built-up area density as an indicator of urbanization pressure."
+    "text": "Inputs\n\n\n\nIndicator\nSource\n\n\n\n\nPopulation & poverty\nRGPH 2022, EHCVM\n\n\nNighttime lights\nNASA VIIRS\n\n\nRelative wealth\nMeta RWI\n\n\nService accessibility\nOpenStreetMap\n\n\nRoad network\nOpenStreetMap\n\n\nFlood risk\nGFD / FATHOM\n\n\nBuilt-up density\nGHSL"
   },
   {
     "objectID": "togo-targeting.html#results",
     "href": "togo-targeting.html#results",
-    "title": "Development of Spatial Targeting Tools for Togo",
+    "title": "Spatial Targeting Tool for Togo",
     "section": "Results",
-    "text": "Results\n\n  Results coming soon\n  \n    This section will present canton-level and neighborhood-level priority maps, quintile distributions, and sensitivity analyses. Results are currently being finalized.\n  \n\n\n\n← Back to Ideas & Experiments"
+    "text": "Results\nComing soon.\n\n\n← Back to Ideas & Experiments"
   },
   {
     "objectID": "index.html",
