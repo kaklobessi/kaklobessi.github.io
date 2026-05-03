@@ -4,13 +4,11 @@ title: "Spatial Targeting Tool for Togo"
 
 *Spatial Analysis · Public Policy · 2024*
 
----
 
 ## Overview
 
 This project builds a composite priority index to rank cantons and neighborhoods in Togo by vulnerability, combining census data with satellite and geospatial indicators. The goal is to help allocate social and infrastructure investments where they matter most.
 
----
 
 ## Methodology
 
@@ -18,7 +16,6 @@ Each indicator is normalized to a 0–1 scale and aggregated into a weighted com
 
 The index operates at two scales: **canton** (national coverage) and **neighborhood** (Greater Lomé).
 
----
 
 ## Inputs
 
@@ -32,12 +29,10 @@ The index operates at two scales: **canton** (national coverage) and **neighborh
 | Flood risk | GFD / FATHOM |
 | Built-up density | GHSL |
 
----
 
 ## Results
 
 *Coming soon.*
 
----
 
 <p style="font-size:0.85rem; color:#888;">← <a href="resources.html">Back to Ideas & Experiments</a></p>

@@ -129,6 +129,11 @@ table {
   margin-bottom: 1.4rem;
 }
 
+/* ── Hide horizontal rules ───────────────────────────────── */
+hr {
+  display: none;
+}
+
 /* ── Footer ──────────────────────────────────────────────── */
 .nav-footer {
   background: #f5f8ff;
