@@ -8,7 +8,7 @@ project:
 website:
   title: "Kodjo Aklobessi"
   site-url: "https://kaklobessi.github.io"
-  description: "Kodjo Aklobessi — PhD Student in Economics at Université de Montréal. Research in Family Macroeconomics, Labor Economics, and Applied Microeconometrics."
+  description: "Kodjo Aklobessi — PhD Candidate in Economics at Université de Montréal. Research in Family Macroeconomics, Labor Economics, and Applied Microeconometrics."
   open-graph: true
   navbar:
     background: "#002366"
