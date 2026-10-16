@@ -1,5 +1,6 @@
 ---
 title: "Blog"
+description-meta: "Blog of Kodjo Aklobessi, PhD Candidate in Economics at Université de Montréal."
 ---
 
 *Forthcoming.*

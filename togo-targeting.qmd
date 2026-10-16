@@ -1,5 +1,6 @@
 ---
 title: "Spatial Targeting Tool for Togo"
+description-meta: "A composite priority index ranking cantons and neighborhoods in Togo by vulnerability, combining census, survey, nighttime lights, relative wealth and geospatial data."
 ---
 
 *Spatial Analysis · Public Policy · 2024*

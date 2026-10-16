@@ -1,5 +1,6 @@
 ---
 title: "Teaching"
+description-meta: "Teaching by Kodjo Aklobessi: economics and mathematics for economics at Université de Montréal, and applied statistical computing (Stata, R, Python) at Université de Kara."
 ---
 
 ## Université de Montréal

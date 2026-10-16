@@ -1,5 +1,6 @@
 ---
 title: "Curriculum Vitae"
+description-meta: "Curriculum vitae of Kodjo Aklobessi, PhD Candidate in Economics at Université de Montréal."
 ---
 
 [Download CV](CV_AKA.pdf){.btn .btn-outline-primary}

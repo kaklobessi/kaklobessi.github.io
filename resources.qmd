@@ -1,5 +1,6 @@
 ---
 title: "Ideas & Experiments"
+description-meta: "Applied projects by Kodjo Aklobessi on poverty mapping, spatial targeting and social protection, combining census, survey, satellite and geospatial data."
 ---
 
 Applied projects at the intersection of data, development, and public policy.

@@ -1,5 +1,6 @@
 ---
 title: "Research"
+description-meta: "Research by Kodjo Aklobessi (Université de Montréal): progressive taxation and the added worker effect, the Environmental Kuznets Curve in West Africa, and agricultural advisory services in Côte d'Ivoire."
 ---
 
 ## Works in Progress

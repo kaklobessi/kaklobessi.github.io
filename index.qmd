@@ -1,5 +1,8 @@
 ---
 title: "Kodjo Aklobessi"
+pagetitle: "Kodjo Aklobessi | PhD Candidate in Economics, Université de Montréal"
+description-meta: "Kodjo Aklobessi, PhD Candidate in Economics at Université de Montréal. Research in family macroeconomics, labor economics and applied microeconometrics; poverty measurement and social protection targeting."
+title-prefix: ""
 about:
   template: trestles
   image: Photo_AKLOBESSI.jpg
@@ -21,3 +24,29 @@ about:
 I am a PhD Candidate in Economics at the **Université de Montréal**. My research lies at the intersection of Family Macroeconomics, Labor Economics, and Applied Microeconometrics.
 
 Prior to my PhD, I worked with international institutions including the World Bank, AFRISTAT, and INSEED on household surveys, poverty measurement, and social protection targeting in developing countries.
+
+```{=html}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kodjo Aklobessi",
+  "alternateName": "Apollinaire Kodjo Aklobessi",
+  "url": "https://kaklobessi.github.io/",
+  "image": "https://kaklobessi.github.io/Photo_AKLOBESSI.jpg",
+  "jobTitle": "PhD Candidate in Economics",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "Université de Montréal",
+    "url": "https://www.umontreal.ca/"
+  },
+  "email": "mailto:kodjo.aklobessi@umontreal.ca",
+  "knowsAbout": ["Family Macroeconomics", "Labor Economics", "Applied Microeconometrics", "Poverty Measurement", "Social Protection Targeting"],
+  "sameAs": [
+    "https://www.linkedin.com/in/apollinaire-kodjo-aklobessi-b4477b115/",
+    "https://scholar.google.com/citations?user=LH6CiwUAAAAJ",
+    "https://github.com/kaklobessi"
+  ]
+}
+</script>
+```
